@@ -1,0 +1,6 @@
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\MusicData.dll
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\MusicData.pdb
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.AssemblyReference.cache
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb
