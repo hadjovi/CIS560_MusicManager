@@ -28,48 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SongAdd));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.udAddButton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.uxTrySearch = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 28);
+            this.label1.Location = new System.Drawing.Point(60, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(59, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Song Title";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(135, 34);
+            this.label2.Location = new System.Drawing.Point(218, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(68, 15);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Album Title";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(229, 60);
+            this.label3.Location = new System.Drawing.Point(378, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.Size = new System.Drawing.Size(70, 15);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "Artist Name";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(550, 30);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 15);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Genre";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(656, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 15);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Playtime";
+            // 
+            // udAddButton
+            // 
+            this.udAddButton.Location = new System.Drawing.Point(348, 387);
+            this.udAddButton.Name = "udAddButton";
+            this.udAddButton.Size = new System.Drawing.Size(75, 23);
+            this.udAddButton.TabIndex = 5;
+            this.udAddButton.Text = "Add!";
+            this.udAddButton.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(39, 105);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(693, 265);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(60, 48);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(218, 48);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(378, 48);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.TabIndex = 9;
+            // 
+            // uxTrySearch
+            // 
+            this.uxTrySearch.Location = new System.Drawing.Point(348, 77);
+            this.uxTrySearch.Name = "uxTrySearch";
+            this.uxTrySearch.Size = new System.Drawing.Size(75, 23);
+            this.uxTrySearch.TabIndex = 10;
+            this.uxTrySearch.Text = "Try Search";
+            this.uxTrySearch.UseVisualStyleBackColor = true;
             // 
             // SongAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 422);
+            this.Controls.Add(this.uxTrySearch);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.udAddButton);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SongAdd";
-            this.Text = "SongAdd";
+            this.Text = "Add Song";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,5 +166,13 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Label label4;
+        private Label label5;
+        private Button udAddButton;
+        private DataGridView dataGridView1;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private Button uxTrySearch;
     }
 }
