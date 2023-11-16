@@ -7,7 +7,7 @@ namespace MusicData.DataDelegates
 {
     public class RetrieveUsersDataDelegate : DataReaderDelegate<IReadOnlyList<User>>
     {
-        public RetrieveUsersDataDelegate(string procedureName) : base("User.RetrieveUser")
+        public RetrieveUsersDataDelegate() : base("User.RetrieveUser")
         {
         }
 

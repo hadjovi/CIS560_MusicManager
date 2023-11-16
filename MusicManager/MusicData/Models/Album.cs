@@ -6,13 +6,11 @@ namespace MusicData.Models
     {
         public int AlbumID { get; }
         public string AlbumName { get; }
-        public int ArtistsAlbumID { get; }
 
-        public Album(int albumId, string albumName, int artistsAlbumId)
+        public Album(int albumId, string albumName)
         {
             AlbumID = albumId;
             AlbumName = albumName;
-            ArtistsAlbumID = artistsAlbumId;
         }
     }
 }

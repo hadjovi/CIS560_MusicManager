@@ -7,14 +7,16 @@ namespace MusicData.Models
         public int ArtistID { get; }
         public string ArtistName { get; }
         public string ArtistLabel { get; }
-        public string ArtistRealName { get; }
+        public string ArtistFirstName { get; }
+        public string ArtistLastName { get; }
 
-        public Artist(int artistId, string artistName, string artistLabel, string artistRealName)
+        public Artist(int artistId, string artistName, string artistLabel, string artistFirstName, string artistLastName)
         {
             ArtistID = artistId;
             ArtistName = artistName;
             ArtistLabel = artistLabel;
-            ArtistRealName = artistRealName;
+            ArtistFirstName = artistFirstName;
+            ArtistLastName = artistLastName;
         }
     }
 }

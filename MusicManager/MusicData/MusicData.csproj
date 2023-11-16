@@ -41,13 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDelegates\CreateUserDataDelegate.cs" />
+    <Compile Include="DataDelegates\FetchUserDataDelegate.cs" />
+    <Compile Include="DataDelegates\GetUserDataDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveUsersDataDelegate.cs" />
+    <Compile Include="IUserRepository.cs" />
+    <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\Artist.cs" />
+    <Compile Include="Models\ArtistsAlbum.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Playlist.cs" />
     <Compile Include="Models\SharedUserPlaylist.cs" />
     <Compile Include="Models\Song.cs" />
     <Compile Include="Models\SongPlaylistLink.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlUserRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DataAccessDemo2\DataAccessDemo2\DataAccess\DataAccess.csproj">
+      <Project>{a5ac459d-6c0a-4d6e-ad65-ecb3e0fec3a7}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

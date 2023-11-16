@@ -5,16 +5,18 @@ namespace MusicData.Models
     public class Playlist
     {
         public int PlaylistID { get; }
-        public int OwnerUserID { get; }
+        public string PlaylistName { get; }
+        public int PlaylistOwnerID { get; }
         public bool IsPrivate { get; }
-        public bool IsDelete { get; }
+        public bool IsDeleted { get; }
 
-        public Playlist(int playlistId, int ownerUserId, bool isPrivate, bool isDelete)
+        public Playlist(int playlistId, string playlistName, int playlistOwnerId, bool isPrivate, bool isDeleted)
         {
             PlaylistID = playlistId;
-            OwnerUserID = ownerUserId;
+            PlaylistName = playlistName;
+            PlaylistOwnerID = playlistOwnerId;
             IsPrivate = isPrivate;
-            IsDelete = isDelete;
+            IsDeleted = isDeleted;
         }
     }
 }

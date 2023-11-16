@@ -4,3 +4,6 @@ C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\DataAccess.dll
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\DataAccess.pdb
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CopyComplete
