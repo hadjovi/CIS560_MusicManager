@@ -1,8 +1,8 @@
 namespace MusicManager
 {
-    public partial class Form1 : Form
+    public partial class uxMainWindow : Form
     {
-        public Form1()
+        public uxMainWindow()
         {
             InitializeComponent();
         }
