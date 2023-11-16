@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\waysi\\.nuget\\packages\\": {}
+    "C:\\Users\\rayan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\waysi\\OneDrive\\Documents\\GitHub\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
+      "projectUniqueName": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
       "projectName": "MusicManagerUI",
-      "projectPath": "C:\\Users\\waysi\\OneDrive\\Documents\\GitHub\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
-      "packagesPath": "C:\\Users\\waysi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\waysi\\OneDrive\\Documents\\GitHub\\CIS560_MusicManager\\MusicManager\\MusicManager\\obj\\",
+      "projectPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
+      "packagesPath": "C:\\Users\\rayan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\waysi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
