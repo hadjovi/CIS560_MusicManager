@@ -30,33 +30,6 @@ C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CI
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.pdb
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.genruntimeconfig.cache
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\ref\MusicManagerLibrary.dll
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\appsettings.json
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\MusicManagerLibrary.exe
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\MusicManagerLibrary.deps.json
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\MusicManagerLibrary.runtimeconfig.json
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\MusicManagerLibrary.dll
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\MusicManagerLibrary.pdb
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.csproj.AssemblyReference.cache
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.AssemblyInfoInputs.cache
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.AssemblyInfo.cs
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.csproj.CoreCompileInputs.cache
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\scopedcss\bundle\MusicManagerLibrary.styles.css
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.csproj.CopyComplete
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.dll
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\refint\MusicManagerLibrary.dll
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.pdb
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\MusicManagerLibrary.genruntimeconfig.cache
-C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManagerLibrary\obj\Debug\net6.0\ref\MusicManagerLibrary.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\appsettings.json
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManagerLibrary\bin\Debug\net6.0\MusicManagerLibrary.exe

@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicManagerLibrary", "Musi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicData", "MusicData\MusicData.csproj", "{00ACC648-7926-44E4-A836-C18D8D704392}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\..\..\DataAccessDemo2\DataAccessDemo2\DataAccess\DataAccess.csproj", "{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessTests", "..\..\..\DataAccessDemo2\DataAccessDemo2\DataAccessTests\DataAccessTests.csproj", "{D664D21E-0EBD-425C-8E1C-2FA8A22F4225}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{00ACC648-7926-44E4-A836-C18D8D704392}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00ACC648-7926-44E4-A836-C18D8D704392}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00ACC648-7926-44E4-A836-C18D8D704392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D664D21E-0EBD-425C-8E1C-2FA8A22F4225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D664D21E-0EBD-425C-8E1C-2FA8A22F4225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D664D21E-0EBD-425C-8E1C-2FA8A22F4225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D664D21E-0EBD-425C-8E1C-2FA8A22F4225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
