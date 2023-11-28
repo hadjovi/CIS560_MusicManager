@@ -46,6 +46,7 @@
             this.uxAddSong = new System.Windows.Forms.Button();
             this.uxPlaylistOwnerName = new System.Windows.Forms.Label();
             this.uxLibraryOwnerName = new System.Windows.Forms.Label();
+            this.uxPlaylistSettings = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxSongslist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxPlaylists)).BeginInit();
             this.SuspendLayout();
@@ -205,11 +206,21 @@
             this.uxLibraryOwnerName.TabIndex = 18;
             this.uxLibraryOwnerName.Text = "__LibraryOwner__";
             // 
+            // uxPlaylistSettings
+            // 
+            this.uxPlaylistSettings.Location = new System.Drawing.Point(550, 395);
+            this.uxPlaylistSettings.Name = "uxPlaylistSettings";
+            this.uxPlaylistSettings.Size = new System.Drawing.Size(110, 23);
+            this.uxPlaylistSettings.TabIndex = 19;
+            this.uxPlaylistSettings.Text = "Playlist Settings";
+            this.uxPlaylistSettings.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.uxPlaylistSettings);
             this.Controls.Add(this.uxLibraryOwnerName);
             this.Controls.Add(this.uxPlaylistOwnerName);
             this.Controls.Add(this.uxAddSong);
@@ -255,5 +266,6 @@
         private Button uxAddSong;
         private Label uxPlaylistOwnerName;
         private Label uxLibraryOwnerName;
+        private Button uxPlaylistSettings;
     }
 }

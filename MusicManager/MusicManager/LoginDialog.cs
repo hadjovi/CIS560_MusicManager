@@ -12,7 +12,7 @@ namespace MusicManagerUI
 {
     public partial class LoginDialog : Form
     {
-        List<User> users = new();
+        List<User> users;
         public LoginDialog(List<User> users)
         {
             InitializeComponent();

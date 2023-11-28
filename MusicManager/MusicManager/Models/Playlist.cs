@@ -10,6 +10,14 @@ namespace MusicManagerUI
         public bool IsPrivate { get; }
         public bool IsDeleted { get; }
 
+        /// <summary>
+        /// Constructor to input data from SQL
+        /// </summary>
+        /// <param name="playlistId"></param>
+        /// <param name="playlistName"></param>
+        /// <param name="playlistOwnerId"></param>
+        /// <param name="isPrivate"></param>
+        /// <param name="isDeleted"></param>
         public Playlist(int playlistId, string playlistName, int playlistOwnerId, bool isPrivate, bool isDeleted)
         {
             PlaylistID = playlistId;
@@ -19,19 +27,19 @@ namespace MusicManagerUI
             IsDeleted = isDeleted;
         }
 
-
-        /*
-        public Playlist(string PlaylistName, int OwnerUserID, bool IsPrivate, bool IsDelete)
+        /// <summary>
+        /// Constructor to make playlists in SQL
+        /// </summary>
+        /// <param name="playlistName"></param>
+        /// <param name="playlistOwnerID"></param>
+        /// <param name="isPrivate"></param>
+        public Playlist(string playlistName, int playlistOwnerID, bool isPrivate)
         {
-            playlistName = PlaylistName;
-            ownerUserID = OwnerUserID;
-            isPrivate = IsPrivate;
-            isDelete = IsDelete;
-            //decide how to fetch OwnerName, sql? then pass in as a param??
-            ownerName = "___FIX ME___";
+            //Need to set playlist ID right below this ??----------------------------------------------------------------------
+            PlaylistName = playlistName;
+            PlaylistOwnerID = playlistOwnerID;
+            IsPrivate = isPrivate;
+            IsDeleted = false;
         }
-
-        //Should have a constructor in order to MAKE playlists
-        */
     }
 }
