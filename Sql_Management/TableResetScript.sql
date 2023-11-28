@@ -17,8 +17,9 @@ DROP SCHEMA IF EXISTS MusicManager
 Go
 
 -- Create the "MusicManager" schema
-CREATE SCHEMA MusicManager
+CREATE SCHEMA MusicManager AUTHORIZATION [dbo];
 GO
+
 
 -- Create tables
 CREATE TABLE MusicManager.Artist(
@@ -31,7 +32,7 @@ CREATE TABLE MusicManager.Artist(
 
 CREATE TABLE MusicManager.Album(
     AlbumID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    AlbumName NVARCHAR(100) NOT NULL
+    AlbumName NVARCHAR(200) NOT NULL
 );
 
 CREATE TABLE MusicManager.ArtistsAlbum(
