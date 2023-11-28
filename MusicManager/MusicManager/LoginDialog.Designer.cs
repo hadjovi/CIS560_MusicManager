@@ -57,6 +57,7 @@
             // 
             // uxPasswordBox
             // 
+            this.uxPasswordBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.uxPasswordBox.Location = new System.Drawing.Point(89, 64);
             this.uxPasswordBox.Name = "uxPasswordBox";
             this.uxPasswordBox.Size = new System.Drawing.Size(149, 23);
@@ -64,6 +65,7 @@
             // 
             // uxEmailBox
             // 
+            this.uxEmailBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.uxEmailBox.Location = new System.Drawing.Point(89, 26);
             this.uxEmailBox.Name = "uxEmailBox";
             this.uxEmailBox.Size = new System.Drawing.Size(149, 23);

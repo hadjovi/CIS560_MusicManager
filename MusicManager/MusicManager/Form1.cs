@@ -4,36 +4,42 @@ namespace MusicManager
 {
     public partial class Form1 : Form
     {
-        String username;
+        User SignedIn;
+        User LibOwner;
+        List<User> userList = new();
         public Form1()
         {
             InitializeComponent();
             setPlaylistViewInvisible();
-            username = loginDialog();
+            //Testing
+            makeUsers();
+
+
+            loginDialog();
+            setLibrary(SignedIn);
+
         }
 
 
 
         /// <summary>
-        /// HAVE THIS RETURN USER KEY OR WHATEVER IS NEEDED TO ID THE USER
+        /// Returns User selected from Login Dialog
         /// </summary>
-        /// <returns></returns>
-        public String loginDialog()
+        /// <returns>User selected</returns>
+        public void loginDialog()
         {
-            string Username="";
-            LoginDialog LD = new LoginDialog();
+            LoginDialog LD = new LoginDialog(userList);
             LD.ShowDialog();
             if (LD.DialogResult == DialogResult.OK)
             {
-                username = LD.UserName;
-                Text = "Music Manager - " + username;
+                SignedIn = LD.user;
+                Text = "Music Manager - " + SignedIn.Name;
             }
             else
             {
-                MessageBox.Show("Error in Login Dialog", "Error");
+                MessageBox.Show("Must complete login dialog", "Error");
+                loginDialog();
             }
-            return Username;
-
         }
         /// <summary>
         /// Sets left side of form (playlistView) to invisible
@@ -48,6 +54,7 @@ namespace MusicManager
             uxPlaylistName.Visible = false;
             uxSongslist.Visible = false;
             uxAddSong.Visible = false;
+            uxPlaylistOwnerName.Visible = false;
 
             uxNoPlaylistWarning.Visible = true;
         }
@@ -64,8 +71,40 @@ namespace MusicManager
             uxPlaylistName.Visible = true;
             uxSongslist.Visible = true;
             uxAddSong.Visible = true;
+            uxPlaylistOwnerName.Visible = true;
 
             uxNoPlaylistWarning.Visible = false;
+        }
+
+        //-------------------------------------------------------------------------------------------------------------------------------
+
+        public void makeUsers()//DELETE ME
+        {
+            userList.Add(new User(1, "Hursen Adjovi", "hadjovi@ksu.edu", "adjovi"));
+            userList.Add(new User(2, "Ben Keller", "bkeller02@ksu.edu", "keller"));
+            userList.Add(new User(3, "Dennis Meyer", "dmeyer0282@ksu.edu", "meyer"));
+            userList.Add(new User(0, "Demo", "", ""));
+        }
+
+        private void uxSearchUsers_Click(object sender, EventArgs e)
+        {
+            UserSearchDialog USD = new UserSearchDialog(userList);
+            USD.ShowDialog();
+            if (USD.DialogResult == DialogResult.OK)
+            {
+                setLibrary(USD.user);
+            }
+        }
+        private void setLibrary(User u)
+        {
+            LibOwner = u;
+            uxLibraryOwnerName.Text = u + "'s Library";
+            //Set Library to selected user ----------------------------------------------------------------------------------------------
+            //need to check somewhere for private playlists
+        }
+        private void uxMyPlaylists_Click(object sender, EventArgs e)
+        {
+            setLibrary(SignedIn);
         }
     }
 }

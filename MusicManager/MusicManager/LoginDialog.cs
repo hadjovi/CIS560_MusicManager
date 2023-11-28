@@ -12,41 +12,26 @@ namespace MusicManagerUI
 {
     public partial class LoginDialog : Form
     {
-        public LoginDialog()
+        List<User> users = new();
+        public LoginDialog(List<User> users)
         {
             InitializeComponent();
+            this.users = users;
             uxLoginBad.Visible = false;
         }
 
-        public int UserKey=-1;//See how to track this
-        public string UserName { get; private set; } = "";
-        public String Email
-        {
-            get { return uxEmailBox.Text; }
-        }
-        public String Password
-        {
-            get { return uxPasswordBox.Text; }
-        }
-
+        public User user { get; private set; }
+       
         private void uxLoginButton_Click(object sender, EventArgs e)
         {
-            
-            //Check if login exists
-            if (/*LoginExists*/true)//Login exists
-            {
-                //Set UserKey ?
-                //SET USERNAME HERE
-                UserName = uxEmailBox.Text;//CHANGE THIS
-
-                DialogResult = DialogResult.OK;
+            foreach(User u in users){
+                if (u.LoginAttempt(uxEmailBox.Text,uxPasswordBox.Text))//Login exists
+                {
+                    user = u;
+                    DialogResult = DialogResult.OK;
+                }
             }
-            else//Login does not exist
-            {
-                uxLoginBad.Visible = true;
-            }
-
-
+            uxLoginBad.Visible = true;
         }
     }
 }
