@@ -24,7 +24,6 @@ C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicM
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.pdb
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.AssemblyReference.cache
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManager.uxMainWindow.resources
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.LoginDialog.resources
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.SongAdd.resources
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.UserSearchDialog.resources
@@ -58,3 +57,4 @@ C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CI
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.pdb
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.genruntimeconfig.cache
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\ref\MusicManagerUI.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManager.Form1.resources

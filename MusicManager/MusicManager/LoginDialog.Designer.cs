@@ -34,6 +34,7 @@
             this.uxPasswordBox = new System.Windows.Forms.TextBox();
             this.uxEmailBox = new System.Windows.Forms.TextBox();
             this.uxLoginButton = new System.Windows.Forms.Button();
+            this.uxLoginBad = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,12 +77,25 @@
             this.uxLoginButton.TabIndex = 4;
             this.uxLoginButton.Text = "Submit";
             this.uxLoginButton.UseVisualStyleBackColor = true;
+            this.uxLoginButton.Click += new System.EventHandler(this.uxLoginButton_Click);
+            // 
+            // uxLoginBad
+            // 
+            this.uxLoginBad.AutoSize = true;
+            this.uxLoginBad.Location = new System.Drawing.Point(91, 4);
+            this.uxLoginBad.Name = "uxLoginBad";
+            this.uxLoginBad.Size = new System.Drawing.Size(144, 15);
+            this.uxLoginBad.TabIndex = 5;
+            this.uxLoginBad.Text = "Error: Login does not exist";
+            this.uxLoginBad.Visible = false;
             // 
             // LoginDialog
             // 
+            this.AcceptButton = this.uxLoginButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(266, 126);
+            this.Controls.Add(this.uxLoginBad);
             this.Controls.Add(this.uxLoginButton);
             this.Controls.Add(this.uxEmailBox);
             this.Controls.Add(this.uxPasswordBox);
@@ -102,5 +116,6 @@
         private TextBox uxPasswordBox;
         private TextBox uxEmailBox;
         private Button uxLoginButton;
+        private Label uxLoginBad;
     }
 }

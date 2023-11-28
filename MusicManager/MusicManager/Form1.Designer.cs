@@ -1,6 +1,6 @@
 ﻿namespace MusicManager
 {
-    partial class uxMainWindow
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uxMainWindow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -193,7 +193,7 @@
             this.uxAddSong.Text = "Add Song!";
             this.uxAddSong.UseVisualStyleBackColor = true;
             // 
-            // uxMainWindow
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -215,7 +215,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "uxMainWindow";
+            this.Name = "Form1";
             this.Text = "MusicManager";
             ((System.ComponentModel.ISupportInitialize)(this.uxSongslist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxPlaylists)).EndInit();
