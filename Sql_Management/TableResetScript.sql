@@ -24,7 +24,7 @@ GO
 -- Create tables
 CREATE TABLE MusicManager.Artist(
     ArtistID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    ArtistName NVARCHAR(100) NOT NULL,
+    ArtistName NVARCHAR(100) NOT NULL UNIQUE,
 	ArtistLabel NVARCHAR(100) NOT NULL,
 	ArtistFirstName NVARCHAR(100) NOT NULL,
 	ArtistLastName NVARCHAR(100) NOT NULL
@@ -58,7 +58,7 @@ CREATE TABLE MusicManager.Song(
 	GenreID INT NOT NULL,
 	AlbumID INT NOT NULL,
 
-	CONSTRAINT [UK_Song_and_Album] UNIQUE (SongID,AlbumID),
+	CONSTRAINT [UK_Song_and_Album] UNIQUE (SongName,AlbumID),
 	CONSTRAINT [UK_Track_and_Album] UNIQUE (TrackNumber,AlbumID),
 	CONSTRAINT FK_Song_Album FOREIGN KEY (AlbumID) REFERENCES MusicManager.Album(AlbumID),
     CONSTRAINT FK_Song_Genre FOREIGN KEY (GenreID) REFERENCES MusicManager.Genre(GenreID)
