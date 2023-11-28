@@ -16,5 +16,7 @@ namespace MusicData.Models
             Email = email;
             Password = password;
         }
+
+        //public string LoginAttempt()
     }
 }

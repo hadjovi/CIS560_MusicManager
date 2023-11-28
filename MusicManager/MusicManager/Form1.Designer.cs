@@ -1,6 +1,6 @@
 ﻿namespace MusicManager
 {
-    partial class uxMainWindow
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uxMainWindow));
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,18 +44,11 @@
             this.uxSearchUsers = new System.Windows.Forms.Button();
             this.uxMyPlaylists = new System.Windows.Forms.Button();
             this.uxAddSong = new System.Windows.Forms.Button();
+            this.uxPlaylistOwnerName = new System.Windows.Forms.Label();
+            this.uxLibraryOwnerName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uxSongslist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxPlaylists)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(651, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Playlists";
             // 
             // label2
             // 
@@ -151,7 +143,7 @@
             // uxPlaylistName
             // 
             this.uxPlaylistName.AutoSize = true;
-            this.uxPlaylistName.Location = new System.Drawing.Point(173, 19);
+            this.uxPlaylistName.Location = new System.Drawing.Point(93, 18);
             this.uxPlaylistName.Name = "uxPlaylistName";
             this.uxPlaylistName.Size = new System.Drawing.Size(96, 15);
             this.uxPlaylistName.TabIndex = 12;
@@ -174,6 +166,7 @@
             this.uxSearchUsers.TabIndex = 14;
             this.uxSearchUsers.Text = "Search Users";
             this.uxSearchUsers.UseVisualStyleBackColor = true;
+            this.uxSearchUsers.Click += new System.EventHandler(this.uxSearchUsers_Click);
             // 
             // uxMyPlaylists
             // 
@@ -183,6 +176,7 @@
             this.uxMyPlaylists.TabIndex = 15;
             this.uxMyPlaylists.Text = "My Playlists";
             this.uxMyPlaylists.UseVisualStyleBackColor = true;
+            this.uxMyPlaylists.Click += new System.EventHandler(this.uxMyPlaylists_Click);
             // 
             // uxAddSong
             // 
@@ -193,11 +187,31 @@
             this.uxAddSong.Text = "Add Song!";
             this.uxAddSong.UseVisualStyleBackColor = true;
             // 
-            // uxMainWindow
+            // uxPlaylistOwnerName
+            // 
+            this.uxPlaylistOwnerName.AutoSize = true;
+            this.uxPlaylistOwnerName.Location = new System.Drawing.Point(295, 18);
+            this.uxPlaylistOwnerName.Name = "uxPlaylistOwnerName";
+            this.uxPlaylistOwnerName.Size = new System.Drawing.Size(99, 15);
+            this.uxPlaylistOwnerName.TabIndex = 17;
+            this.uxPlaylistOwnerName.Text = "__PlaylistOwner__";
+            // 
+            // uxLibraryOwnerName
+            // 
+            this.uxLibraryOwnerName.AutoSize = true;
+            this.uxLibraryOwnerName.Location = new System.Drawing.Point(622, 18);
+            this.uxLibraryOwnerName.Name = "uxLibraryOwnerName";
+            this.uxLibraryOwnerName.Size = new System.Drawing.Size(98, 15);
+            this.uxLibraryOwnerName.TabIndex = 18;
+            this.uxLibraryOwnerName.Text = "__LibraryOwner__";
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.uxLibraryOwnerName);
+            this.Controls.Add(this.uxPlaylistOwnerName);
             this.Controls.Add(this.uxAddSong);
             this.Controls.Add(this.uxMyPlaylists);
             this.Controls.Add(this.uxSearchUsers);
@@ -213,9 +227,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "uxMainWindow";
+            this.Name = "Form1";
             this.Text = "MusicManager";
             ((System.ComponentModel.ISupportInitialize)(this.uxSongslist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxPlaylists)).EndInit();
@@ -225,7 +238,6 @@
         }
 
         #endregion
-        private Label label1;
         private Label label2;
         private Label label3;
         private Button button1;
@@ -241,5 +253,7 @@
         private Button uxSearchUsers;
         private Button uxMyPlaylists;
         private Button uxAddSong;
+        private Label uxPlaylistOwnerName;
+        private Label uxLibraryOwnerName;
     }
 }

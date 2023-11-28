@@ -70,11 +70,5 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlUserRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\DataAccessDemo2\DataAccessDemo2\DataAccess\DataAccess.csproj">
-      <Project>{a5ac459d-6c0a-4d6e-ad65-ecb3e0fec3a7}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
