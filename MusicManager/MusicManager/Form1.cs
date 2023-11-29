@@ -10,11 +10,12 @@ namespace MusicManager
         User SignedIn;
         User LibOwner;
         List<User> userList = new();
-        List<UiPlaylist> currentLibrary = new();//check
-        UiPlaylist currentPlaylist;//check
+        List<Playlist> currentLibrary = new();//check
+        Playlist currentPlaylist;//check
         List<UiSong> allSongList = new();//check
 
-        SqlUserRepository repo = new SqlUserRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+        SqlUserRepository uRepo = new SqlUserRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+        SqlPlaylistRepository pRepo = new SqlPlaylistRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
 
         public Form1()
         {
@@ -92,7 +93,7 @@ namespace MusicManager
         public void getUsers()
         {
             userList = new();
-            IReadOnlyList<User> readUsers = repo.RetrieveUsers();
+            IReadOnlyList<User> readUsers = uRepo.RetrieveUsers();
             foreach(User u in readUsers)
             {
                 userList.Add(new User(u.UserID, u.Name, u.Email, u.Password));
@@ -111,11 +112,16 @@ namespace MusicManager
         private void setLibrary(User u)
         {
             LibOwner = u;
-
-
+            currentLibrary = new();
+            IReadOnlyList<Playlist> readPlaylist= pRepo.RetrievePlaylists(u.UserID);
+            foreach(Playlist p in readPlaylist)
+            {
+                if (!p.IsPrivate || u.UserID == SignedIn.UserID)
+                {
+                    currentLibrary.Add(new Playlist(p.PlaylistID, p.PlaylistName, p.PlaylistOwnerID, p.IsPrivate, p.IsDeleted));
+                }
+            }
             uxLibraryOwnerName.Text = u + "'s Library";
-            //Set Library to selected user ----------------------------------------------------------------------------------------------
-            //need to check somewhere for private playlists
             setPlaylistViewInvisible();
         }
         private void uxMyPlaylists_Click(object sender, EventArgs e)
@@ -133,7 +139,7 @@ namespace MusicManager
         {
             foreach(DataGridViewRow row in uxPlaylists.SelectedRows)
             {
-                currentPlaylist = row.DataBoundItem as UiPlaylist;
+                currentPlaylist = row.DataBoundItem as Playlist;
             }
 
             uxPlaylistName.Text = currentPlaylist.PlaylistName;
