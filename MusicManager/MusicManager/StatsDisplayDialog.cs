@@ -15,7 +15,7 @@ namespace MusicManagerUI
     {
         List<Song> mostPopSongs = new();
 
-        public StatsDisplayDialog(List<Song> mps, )
+        public StatsDisplayDialog(List<Song> mps)
         {
             InitializeComponent();
 

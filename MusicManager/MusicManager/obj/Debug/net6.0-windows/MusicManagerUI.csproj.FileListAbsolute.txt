@@ -44,3 +44,5 @@ C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicM
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.pdb
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\DataAccess.pdb
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.CopyComplete
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.StatsDisplayDialog.resources
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.dll.config
