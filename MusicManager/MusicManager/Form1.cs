@@ -112,6 +112,7 @@ namespace MusicManager
         private void setLibrary(User u)
         {
             LibOwner = u;
+            MessageBox.Show(u.UserID.ToString());
             currentLibrary = new();
             IReadOnlyList<Playlist> readPlaylist= pRepo.RetrievePlaylists(u.UserID);
             foreach(Playlist p in readPlaylist)

@@ -95,9 +95,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(266, 126);
+            this.Controls.Add(this.uxEmailBox);
             this.Controls.Add(this.uxLoginBad);
             this.Controls.Add(this.uxLoginButton);
-            this.Controls.Add(this.uxEmailBox);
             this.Controls.Add(this.uxPasswordBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
