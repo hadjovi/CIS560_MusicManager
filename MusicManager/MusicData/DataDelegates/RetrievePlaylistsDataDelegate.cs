@@ -8,7 +8,7 @@ namespace MusicData.DataDelegates
     public class RetrievePlaylistsDataDelegate : DataReaderDelegate<IReadOnlyList<Playlist>>
     {
         private readonly int ownerId;
-        public RetrievePlaylistsDataDelegate(int ownerId) : base("UserOwnedPlaylistFetch")
+        public RetrievePlaylistsDataDelegate(int ownerId) : base("RetrieveAllUserPlaylists")
         {
             this.ownerId = ownerId;
         }

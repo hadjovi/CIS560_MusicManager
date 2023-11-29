@@ -203,6 +203,7 @@
     <Compile Include="DataDelegates\GetSongByTrackNumberDataDelegate.cs" />
     <Compile Include="DataDelegates\GetSongPlaylistLinkDataDelegate.cs" />
     <Compile Include="DataDelegates\GetUserDataDelegate.cs" />
+    <Compile Include="DataDelegates\PlaylistUpdateIsPrivateDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveArtistsAlbumDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveArtistsDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGenresDataDelegate.cs" />
@@ -230,14 +231,14 @@
     <Compile Include="SqlUserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DataAccessDemo2\DataAccessDemo2\DataAccess\DataAccess.csproj">
       <Project>{a5ac459d-6c0a-4d6e-ad65-ecb3e0fec3a7}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.1.1\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.1.1\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
