@@ -83,6 +83,7 @@ CREATE PROCEDURE RetrieveAllUserPlaylists @UserId INT
 AS
 SELECT P.PlaylistID,
 		P.PlaylistName,
+		P.PlaylistOwnerID,
 		P.IsPrivate,
 		P.IsDeleted
 FROM MusicManager.Playlist AS P
@@ -91,6 +92,7 @@ AND P.IsDeleted = 0
 UNION
 SELECT P.PlaylistID,
 		P.PlaylistName,
+		P.PlaylistOwnerID,
 		P.IsPrivate,
 		P.IsDeleted
 FROM MusicManager.Playlist AS P
