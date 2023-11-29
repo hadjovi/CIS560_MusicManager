@@ -28,5 +28,11 @@ namespace MusicData
             var d = new CreatePlaylistDataDelegate(playlistName, playlistOwnerId, isPrivate, isDeleted);
             return executor.ExecuteNonQuery(d);
         }
+
+        public void SetOwnedPlaylistPublic(int ownerId, int playlistId, string action)
+        {
+            var d = new PlaylistUpdateIsPrivateDataDelegate(ownerId, playlistId, action);
+            executor.ExecuteNonQuery(d);
+        }
     }
 }
