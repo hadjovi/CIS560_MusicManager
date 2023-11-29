@@ -13,6 +13,9 @@
     <Compile Update="SongAdd.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="StatsDisplayDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserSearchDialog.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -4,7 +4,7 @@ using MusicData.Models;
 
 namespace MusicManagerUI.Models
 {
-    internal class UiSong : Song
+    public class UiSong : Song
     {
         string ArtistName { get; set; }
         string AlbumName { get; set; }
