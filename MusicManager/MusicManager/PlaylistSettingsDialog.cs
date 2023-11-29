@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicData.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,8 @@ namespace MusicManagerUI
 {
     public partial class PlaylistSettingsDialog : Form
     {
-        UiPlaylist P;
-        public PlaylistSettingsDialog(UiPlaylist Play)
+        Playlist P;
+        public PlaylistSettingsDialog(Playlist Play)
         {
             InitializeComponent();
             P = Play;
