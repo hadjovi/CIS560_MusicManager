@@ -8,9 +8,9 @@ namespace MusicData
 
         IReadOnlyList<User> RetrieveUsers();
 
-        User FetchPerson(int userId);
+        User FetchUser(int userId);
 
-        User GetUser(string email);
+        User GetUser(string email, string password);
 
         User CreateUser(string name, string email, string password);
     }

@@ -12,7 +12,7 @@ namespace MusicData.DataDelegates
         public readonly bool isPrivate;
         public readonly bool isDeleted;
 
-        public CreatePlaylistDataDelegate(string playlistName, int playlistOwnerId, bool isPrivate, bool isDeleted) : base("Playlist.CreatePlaylist")
+        public CreatePlaylistDataDelegate(string playlistName, int playlistOwnerId, bool isPrivate, bool isDeleted) : base("CreatePlaylist")
         {
             this.playlistName = playlistName;
             this.playlistOwnerId = playlistOwnerId;

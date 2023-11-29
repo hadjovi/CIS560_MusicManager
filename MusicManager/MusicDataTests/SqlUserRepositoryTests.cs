@@ -46,6 +46,24 @@ namespace MusicDataTests
             Assert.AreEqual(email, actual.Email);
             Assert.AreEqual(password, actual.Password);
         }
+        /*
+        [TestMethod]
+        public void FetchUserShouldWork()
+        {
+            var expected = new User(1, "Ben", "ben@ben.com", "passwordB560");
+            var actual = repo.FetchUser(expected.UserID);
+
+            AssertUsersAreEqual(expected, actual);
+        }
+        */
+        [TestMethod]
+        public void GetUserShouldWork()
+        {
+            var expected = new User(1, "Ben", "ben@ben.com", "passwordB560");
+            var actual = repo.GetUser(expected.Email, expected.Password);
+
+            AssertUsersAreEqual(expected, actual);
+        }
 
         [TestMethod]
         public void RetrieveUsersShouldWork()
