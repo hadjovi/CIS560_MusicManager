@@ -15,9 +15,9 @@ namespace MusicData
         {
             executor = new SqlCommandExecutor(connectionString);
         }
-        public IReadOnlyList<Playlist> RetrievePlaylists(int ownerId)
+        public IReadOnlyList<Playlist> RetrievePlaylists(int userId)
         {
-            return executor.ExecuteReader(new RetrievePlaylistsDataDelegate(ownerId));
+            return executor.ExecuteReader(new RetrievePlaylistsDataDelegate(userId));
         }
 
         public Playlist CreatePlaylist(string playlistName, int playlistOwnerId, bool isPrivate, bool isDeleted)
