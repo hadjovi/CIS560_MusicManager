@@ -1,10 +1,13 @@
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.AssemblyReference.cache
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.AssemblyReference.cache
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\MusicData.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\MusicData.pdb
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\DataAccess.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\DataAccess.pdb
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.AssemblyReference.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CopyComplete
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb

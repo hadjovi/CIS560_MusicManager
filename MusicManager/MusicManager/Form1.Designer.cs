@@ -31,8 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.uxSignOut = new System.Windows.Forms.Button();
             this.uxSongslist = new System.Windows.Forms.DataGridView();
             this.uxPlaylists = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.uxPlaylistOwnerName = new System.Windows.Forms.Label();
             this.uxLibraryOwnerName = new System.Windows.Forms.Label();
             this.uxPlaylistSettings = new System.Windows.Forms.Button();
+            this.uxStats = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxSongslist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxPlaylists)).BeginInit();
             this.SuspendLayout();
@@ -69,23 +69,15 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Runtime";
             // 
-            // button1
+            // uxSignOut
             // 
-            this.button1.Location = new System.Drawing.Point(697, 407);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 31);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Sign Out";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 15);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "#";
+            this.uxSignOut.Location = new System.Drawing.Point(697, 407);
+            this.uxSignOut.Name = "uxSignOut";
+            this.uxSignOut.Size = new System.Drawing.Size(86, 31);
+            this.uxSignOut.TabIndex = 4;
+            this.uxSignOut.Text = "Sign Out";
+            this.uxSignOut.UseVisualStyleBackColor = true;
+            this.uxSignOut.Click += new System.EventHandler(this.uxSignOut_Click);
             // 
             // uxSongslist
             // 
@@ -98,12 +90,22 @@
             // 
             // uxPlaylists
             // 
+            this.uxPlaylists.AllowUserToAddRows = false;
+            this.uxPlaylists.AllowUserToDeleteRows = false;
+            this.uxPlaylists.AllowUserToResizeRows = false;
+            this.uxPlaylists.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.uxPlaylists.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.uxPlaylists.ColumnHeadersVisible = false;
             this.uxPlaylists.Location = new System.Drawing.Point(548, 93);
+            this.uxPlaylists.MultiSelect = false;
             this.uxPlaylists.Name = "uxPlaylists";
+            this.uxPlaylists.RowHeadersVisible = false;
             this.uxPlaylists.RowTemplate.Height = 25;
+            this.uxPlaylists.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.uxPlaylists.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.uxPlaylists.Size = new System.Drawing.Size(240, 263);
             this.uxPlaylists.TabIndex = 7;
+            this.uxPlaylists.SelectionChanged += new System.EventHandler(this.uxPlaylists_SelectionChanged);
             // 
             // label5
             // 
@@ -153,9 +155,10 @@
             // uxNoPlaylistWarning
             // 
             this.uxNoPlaylistWarning.AutoSize = true;
-            this.uxNoPlaylistWarning.Location = new System.Drawing.Point(312, 362);
+            this.uxNoPlaylistWarning.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uxNoPlaylistWarning.Location = new System.Drawing.Point(188, 210);
             this.uxNoPlaylistWarning.Name = "uxNoPlaylistWarning";
-            this.uxNoPlaylistWarning.Size = new System.Drawing.Size(156, 15);
+            this.uxNoPlaylistWarning.Size = new System.Drawing.Size(206, 21);
             this.uxNoPlaylistWarning.TabIndex = 13;
             this.uxNoPlaylistWarning.Text = "No playlist currently opened";
             // 
@@ -187,6 +190,7 @@
             this.uxAddSong.TabIndex = 16;
             this.uxAddSong.Text = "Add Song!";
             this.uxAddSong.UseVisualStyleBackColor = true;
+            this.uxAddSong.Click += new System.EventHandler(this.uxAddSong_Click);
             // 
             // uxPlaylistOwnerName
             // 
@@ -215,18 +219,28 @@
             this.uxPlaylistSettings.Text = "Playlist Settings";
             this.uxPlaylistSettings.UseVisualStyleBackColor = true;
             // 
+            // uxStats
+            // 
+            this.uxStats.Location = new System.Drawing.Point(339, 375);
+            this.uxStats.Name = "uxStats";
+            this.uxStats.Size = new System.Drawing.Size(119, 23);
+            this.uxStats.TabIndex = 20;
+            this.uxStats.Text = "Gee-Whiz Stats";
+            this.uxStats.UseVisualStyleBackColor = true;
+            this.uxStats.Click += new System.EventHandler(this.uxStats_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.uxStats);
             this.Controls.Add(this.uxPlaylistSettings);
             this.Controls.Add(this.uxLibraryOwnerName);
             this.Controls.Add(this.uxPlaylistOwnerName);
             this.Controls.Add(this.uxAddSong);
             this.Controls.Add(this.uxMyPlaylists);
             this.Controls.Add(this.uxSearchUsers);
-            this.Controls.Add(this.uxNoPlaylistWarning);
             this.Controls.Add(this.uxPlaylistName);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -234,10 +248,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.uxPlaylists);
             this.Controls.Add(this.uxSongslist);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.uxSignOut);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.uxNoPlaylistWarning);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "MusicManager";
@@ -251,8 +265,7 @@
         #endregion
         private Label label2;
         private Label label3;
-        private Button button1;
-        private Label label4;
+        private Button uxSignOut;
         private DataGridView uxSongslist;
         private DataGridView uxPlaylists;
         private Label label5;
@@ -267,5 +280,6 @@
         private Label uxPlaylistOwnerName;
         private Label uxLibraryOwnerName;
         private Button uxPlaylistSettings;
+        private Button uxStats;
     }
 }

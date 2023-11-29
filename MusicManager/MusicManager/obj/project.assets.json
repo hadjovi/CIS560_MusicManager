@@ -1,31 +1,61 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
+        }
+      },
+      "MusicData/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MusicData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicData.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess/DataAccess.csproj",
+      "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "MusicData/1.0.0": {
+      "type": "project",
+      "path": "../MusicData/MusicData.csproj",
+      "msbuildProject": "../MusicData/MusicData.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "MusicData >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\benke\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\waysi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
+      "projectUniqueName": "C:\\Users\\waysi\\OneDrive\\Documents\\GitHub\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
       "projectName": "MusicManagerUI",
-      "projectPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
-      "packagesPath": "C:\\Users\\benke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicManager\\obj\\",
+      "projectPath": "C:\\Users\\waysi\\OneDrive\\Documents\\GitHub\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
+      "packagesPath": "C:\\Users\\waysi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\waysi\\OneDrive\\Documents\\GitHub\\CIS560_MusicManager\\MusicManager\\MusicManager\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\benke\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\waysi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -38,7 +68,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\waysi\\OneDrive\\Documents\\GitHub\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj": {
+              "projectPath": "C:\\Users\\waysi\\OneDrive\\Documents\\GitHub\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -69,7 +103,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

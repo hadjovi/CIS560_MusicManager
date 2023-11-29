@@ -2,13 +2,14 @@
 
 namespace MusicManagerUI
 {
-    public class Playlist
+    public class UiPlaylist
     {
         public int PlaylistID { get; }
         public string PlaylistName { get; }
         public int PlaylistOwnerID { get; }
         public bool IsPrivate { get; }
         public bool IsDeleted { get; }
+        public int runTime { get; set; }
 
         /// <summary>
         /// Constructor to input data from SQL
@@ -18,7 +19,7 @@ namespace MusicManagerUI
         /// <param name="playlistOwnerId"></param>
         /// <param name="isPrivate"></param>
         /// <param name="isDeleted"></param>
-        public Playlist(int playlistId, string playlistName, int playlistOwnerId, bool isPrivate, bool isDeleted)
+        public UiPlaylist(int playlistId, string playlistName, int playlistOwnerId, bool isPrivate, bool isDeleted)
         {
             PlaylistID = playlistId;
             PlaylistName = playlistName;
@@ -33,7 +34,7 @@ namespace MusicManagerUI
         /// <param name="playlistName"></param>
         /// <param name="playlistOwnerID"></param>
         /// <param name="isPrivate"></param>
-        public Playlist(string playlistName, int playlistOwnerID, bool isPrivate)
+        public UiPlaylist(string playlistName, int playlistOwnerID, bool isPrivate)
         {
             //Need to set playlist ID right below this ??----------------------------------------------------------------------
             PlaylistName = playlistName;

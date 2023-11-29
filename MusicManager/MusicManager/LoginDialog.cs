@@ -12,19 +12,19 @@ namespace MusicManagerUI
 {
     public partial class LoginDialog : Form
     {
-        List<User> users;
-        public LoginDialog(List<User> users)
+        List<UiUser> users;
+        public LoginDialog(List<UiUser> users)
         {
             InitializeComponent();
             this.users = users;
             uxLoginBad.Visible = false;
         }
 
-        public User user { get; private set; }
+        public UiUser user { get; private set; }
        
         private void uxLoginButton_Click(object sender, EventArgs e)
         {
-            foreach(User u in users){
+            foreach(UiUser u in users){
                 if (u.LoginAttempt(uxEmailBox.Text,uxPasswordBox.Text))//Login exists
                 {
                     user = u;

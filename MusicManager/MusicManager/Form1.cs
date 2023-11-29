@@ -1,12 +1,16 @@
 using MusicManagerUI;
+using MusicManagerUI.Models;
 
 namespace MusicManager
 {
     public partial class Form1 : Form
     {
-        User SignedIn;
-        User LibOwner;
-        List<User> userList = new();
+        UiUser SignedIn;
+        UiUser LibOwner;
+        List<UiUser> userList = new();
+        List<UiPlaylist> currentLibrary = new();
+        UiPlaylist currentPlaylist;
+        List<UiSong> allSongList = new();
         public Form1()
         {
             InitializeComponent();
@@ -17,8 +21,12 @@ namespace MusicManager
 
             loginDialog();
             setLibrary(SignedIn);
-
-        }
+            uxPlaylists.DataSource = currentLibrary;
+            uxPlaylists.Columns["PlaylistID"].Visible = false;
+            uxPlaylists.Columns["PlaylistOwnerID"].Visible = false;
+            uxPlaylists.Columns["IsPrivate"].Visible = false;
+            uxPlaylists.Columns["isDeleted"].Visible = false;
+    }
 
 
 
@@ -46,7 +54,6 @@ namespace MusicManager
         /// </summary>
         public void setPlaylistViewInvisible()
         {
-            label4.Visible = false;
             label5.Visible = false;
             label6.Visible = false;
             label7.Visible = false;
@@ -63,7 +70,6 @@ namespace MusicManager
         /// </summary>
         public void setPlaylistViewVisible()
         {
-            label4.Visible = true;
             label5.Visible = true;
             label6.Visible = true;
             label7.Visible = true;
@@ -80,10 +86,15 @@ namespace MusicManager
 
         public void makeUsers()//DELETE ME
         {
-            userList.Add(new User(1, "Hursen Adjovi", "hadjovi@ksu.edu", "adjovi"));
-            userList.Add(new User(2, "Ben Keller", "bkeller02@ksu.edu", "keller"));
-            userList.Add(new User(3, "Dennis Meyer", "dmeyer0282@ksu.edu", "meyer"));
-            userList.Add(new User(0, "Demo", "", ""));
+            userList.Add(new UiUser(1, "Hursen Adjovi", "hadjovi@ksu.edu", "adjovi"));
+            userList.Add(new UiUser(2, "Ben Keller", "bkeller02@ksu.edu", "keller"));
+            userList.Add(new UiUser(3, "Dennis Meyer", "dmeyer0282@ksu.edu", "meyer"));
+            userList.Add(new UiUser(0, "Demo", "", ""));
+
+            currentLibrary.Add(new UiPlaylist(1, "FirstPlaylist", 3, false, false));
+            currentLibrary.Add(new UiPlaylist(2, "Second Playlist Priv", 3, true, false));
+            currentLibrary.Add(new UiPlaylist(3, "third playlist pub", 3, false, false));
+            currentLibrary.Add(new UiPlaylist(4, "fourth playlist Del", 3, false, true));
         }
 
         private void uxSearchUsers_Click(object sender, EventArgs e)
@@ -95,16 +106,50 @@ namespace MusicManager
                 setLibrary(USD.user);
             }
         }
-        private void setLibrary(User u)
+        private void setLibrary(UiUser u)
         {
             LibOwner = u;
             uxLibraryOwnerName.Text = u + "'s Library";
             //Set Library to selected user ----------------------------------------------------------------------------------------------
             //need to check somewhere for private playlists
+            setPlaylistViewInvisible();
         }
         private void uxMyPlaylists_Click(object sender, EventArgs e)
         {
             setLibrary(SignedIn);
+        }
+
+        private void uxSignOut_Click(object sender, EventArgs e)
+        {
+            loginDialog();
+            setLibrary(SignedIn);
+        }
+
+        private void uxPlaylists_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach(DataGridViewRow row in uxPlaylists.SelectedRows)
+            {
+                currentPlaylist = row.DataBoundItem as UiPlaylist;
+            }
+
+            uxPlaylistName.Text = currentPlaylist.PlaylistName;
+            uxPlaylistOwnerName.Text = currentPlaylist.PlaylistOwnerID.ToString();// Convert to PLAYLIST OWNER NAME!!!!!!!!
+            setPlaylistViewVisible();
+        }
+
+        private void uxAddSong_Click(object sender, EventArgs e)
+        {
+            SongAdd SAD = new SongAdd(allSongList);
+            SAD.ShowDialog();
+            if (SAD.DialogResult == DialogResult.OK)
+            {
+                //Whaddya do???
+            }
+        }
+
+        private void uxStats_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

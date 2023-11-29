@@ -4,14 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicManagerUI", "MusicManager\MusicManagerUI.csproj", "{DF962BF6-062D-46AE-90A7-12809B393E0E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00ACC648-7926-44E4-A836-C18D8D704392} = {00ACC648-7926-44E4-A836-C18D8D704392}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicManagerLibrary", "MusicManagerLibrary\MusicManagerLibrary.csproj", "{A4139192-5B1B-49B8-BD37-2C20C545B54C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicData", "MusicData\MusicData.csproj", "{00ACC648-7926-44E4-A836-C18D8D704392}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\..\..\DataAccessDemo2\DataAccessDemo2\DataAccess\DataAccess.csproj", "{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessTests", "..\..\..\DataAccessDemo2\DataAccessDemo2\DataAccessTests\DataAccessTests.csproj", "{D664D21E-0EBD-425C-8E1C-2FA8A22F4225}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessTests", "DataAccessTests\DataAccessTests.csproj", "{D664D21E-0EBD-425C-8E1C-2FA8A22F4225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
