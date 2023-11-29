@@ -164,8 +164,8 @@ DROP PROCEDURE IF EXISTS RetrieveAllUsers
 GO
 CREATE PROCEDURE RetrieveAllUsers 
 AS
-SELECT A.ArtistID, A.ArtistName, A.ArtistLabel, A.ArtistFirstName, A.ArtistLastName
-FROM MusicManager.Artist AS A
+SELECT U.UserID, U.[Name], U.Email, U.[Password]
+FROM MusicManager.[User] AS U
 GO
 -- EXEC RetrieveAllUsers 
 
