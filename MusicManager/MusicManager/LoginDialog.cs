@@ -7,31 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MusicData;
+using MusicData.Models;
 
 namespace MusicManagerUI
 {
     public partial class LoginDialog : Form
     {
-        List<UiUser> users;
-        public LoginDialog(List<UiUser> users)
+        
+        SqlUserRepository repo = new SqlUserRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+
+        public LoginDialog(List<User> users)
         {
             InitializeComponent();
-            this.users = users;
             uxLoginBad.Visible = false;
         }
 
-        public UiUser user { get; private set; }
+        public User user { get; private set; }
        
         private void uxLoginButton_Click(object sender, EventArgs e)
         {
-            foreach(UiUser u in users){
-                if (u.LoginAttempt(uxEmailBox.Text,uxPasswordBox.Text))//Login exists
-                {
-                    user = u;
-                    DialogResult = DialogResult.OK;
-                }
+
+            if (repo.GetUser(uxEmailBox.Text, uxPasswordBox.Text) != null)
+            {
+                user = repo.GetUser(uxEmailBox.Text, uxPasswordBox.Text);
+                DialogResult = DialogResult.OK;
             }
-            uxLoginBad.Visible = true;
+            else
+            {
+                uxLoginBad.Visible = true;
+
+            }
         }
     }
 }

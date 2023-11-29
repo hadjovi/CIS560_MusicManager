@@ -241,7 +241,8 @@ INSERT MusicManager.[User] ([Name], Email, [Password])
 VALUES 
     ('Ben', 'ben@ben.com', 'passwordB560'),
     ('Hursen', 'hursen@hursen.com', 'passwordH560'),
-    ('Dennis', 'dennis@dennis.com', 'passwordD560');
+    ('Dennis', 'dennis@dennis.com', 'passwordD560'),
+	('Demo',';',';');
 
 -- Insert data into Playlist table
 INSERT MusicManager.Playlist (PlaylistName, PlaylistOwnerID, IsPrivate, IsDeleted)

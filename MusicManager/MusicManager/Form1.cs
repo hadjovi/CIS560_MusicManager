@@ -1,3 +1,5 @@
+using MusicData;
+using MusicData.Models;
 using MusicManagerUI;
 using MusicManagerUI.Models;
 
@@ -5,18 +7,20 @@ namespace MusicManager
 {
     public partial class Form1 : Form
     {
-        UiUser SignedIn;
-        UiUser LibOwner;
-        List<UiUser> userList = new();
-        List<UiPlaylist> currentLibrary = new();
-        UiPlaylist currentPlaylist;
-        List<UiSong> allSongList = new();
+        User SignedIn;
+        User LibOwner;
+        List<User> userList = new();
+        List<UiPlaylist> currentLibrary = new();//check
+        UiPlaylist currentPlaylist;//check
+        List<UiSong> allSongList = new();//check
+
+        SqlUserRepository repo = new SqlUserRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+
         public Form1()
         {
             InitializeComponent();
             setPlaylistViewInvisible();
-            //Testing
-            makeUsers();
+            getUsers();
 
 
             loginDialog();
@@ -40,7 +44,7 @@ namespace MusicManager
             LD.ShowDialog();
             if (LD.DialogResult == DialogResult.OK)
             {
-                SignedIn = LD.user;
+                SignedIn = (User)LD.user;
                 Text = "Music Manager - " + SignedIn.Name;
             }
             else
@@ -82,19 +86,17 @@ namespace MusicManager
             uxNoPlaylistWarning.Visible = false;
         }
 
-        //-------------------------------------------------------------------------------------------------------------------------------
-
-        public void makeUsers()//DELETE ME
+        /// <summary>
+        /// Call EVERY time to update or fetch users
+        /// </summary>
+        public void getUsers()
         {
-            userList.Add(new UiUser(1, "Hursen Adjovi", "hadjovi@ksu.edu", "adjovi"));
-            userList.Add(new UiUser(2, "Ben Keller", "bkeller02@ksu.edu", "keller"));
-            userList.Add(new UiUser(3, "Dennis Meyer", "dmeyer0282@ksu.edu", "meyer"));
-            userList.Add(new UiUser(0, "Demo", "", ""));
-
-            currentLibrary.Add(new UiPlaylist(1, "FirstPlaylist", 3, false, false));
-            currentLibrary.Add(new UiPlaylist(2, "Second Playlist Priv", 3, true, false));
-            currentLibrary.Add(new UiPlaylist(3, "third playlist pub", 3, false, false));
-            currentLibrary.Add(new UiPlaylist(4, "fourth playlist Del", 3, false, true));
+            userList = new();
+            IReadOnlyList<User> readUsers = repo.RetrieveUsers();
+            foreach(User u in readUsers)
+            {
+                userList.Add(new User(u.UserID, u.Name, u.Email, u.Password));
+            }
         }
 
         private void uxSearchUsers_Click(object sender, EventArgs e)
@@ -106,9 +108,11 @@ namespace MusicManager
                 setLibrary(USD.user);
             }
         }
-        private void setLibrary(UiUser u)
+        private void setLibrary(User u)
         {
             LibOwner = u;
+
+
             uxLibraryOwnerName.Text = u + "'s Library";
             //Set Library to selected user ----------------------------------------------------------------------------------------------
             //need to check somewhere for private playlists

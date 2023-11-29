@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicData.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,10 @@ namespace MusicManagerUI
 {
     public partial class UserSearchDialog : Form
     {
-        List<UiUser> allUsers;
-        List<UiUser> searchedUsers;
-        public UiUser user;
-        public UserSearchDialog(List<UiUser> u)
+        List<User> allUsers;
+        List<User> searchedUsers;
+        public User user;
+        public UserSearchDialog(List<User> u)
         {
             InitializeComponent();
             allUsers = u;
@@ -24,7 +25,7 @@ namespace MusicManagerUI
         private void uxSearch_Click(object sender, EventArgs e)
         {
             searchedUsers = new();
-            foreach(UiUser u in allUsers)
+            foreach(User u in allUsers)
             {
                 if (u.Name.ToLower().Contains(uxNameSearchBox.Text))
                 {
@@ -44,7 +45,7 @@ namespace MusicManagerUI
 
         private void uxSelect_Click(object sender, EventArgs e)
         {
-            user = (UiUser)uxUserListBox.SelectedItem;
+            user = (User)uxUserListBox.SelectedItem;
             DialogResult = DialogResult.OK;
         }
     }

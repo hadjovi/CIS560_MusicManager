@@ -17,6 +17,9 @@ namespace MusicData.Models
             Password = password;
         }
 
-        //public string LoginAttempt()
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

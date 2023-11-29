@@ -2,18 +2,12 @@ C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CI
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\MusicData.dll.config
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\MusicData.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\MusicData.pdb
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\DataAccess.dll
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\DataAccess.pdb
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.AssemblyReference.cache
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CopyComplete
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb
-C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\MusicData.dll.config
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\Azure.Core.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\Azure.Identity.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\DataAccess.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\Microsoft.Data.SqlClient.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\Microsoft.Identity.Client.dll
@@ -41,6 +35,7 @@ C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicD
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\System.Text.Json.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\System.ValueTuple.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\DataAccess.pdb
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\Azure.Core.xml
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\Azure.Identity.xml
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
@@ -81,3 +76,8 @@ C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicD
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.AssemblyReference.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CopyComplete
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb

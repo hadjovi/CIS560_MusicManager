@@ -12,6 +12,9 @@ namespace MusicManager
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
+            //Environment.SetEnvironmentVariable("ConnectionString", @"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+
         }
     }
 }
