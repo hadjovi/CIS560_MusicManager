@@ -12,7 +12,7 @@ namespace MusicData.Models
         {
             ArtistsAlbumID = artistsAlbumId;
             AlbumID = albumId;
-            ArtistsAlbumID = artistId;
+            ArtistID = artistId;
         }
     }
 }
