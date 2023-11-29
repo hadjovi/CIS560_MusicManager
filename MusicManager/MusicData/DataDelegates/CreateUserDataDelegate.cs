@@ -11,7 +11,7 @@ namespace MusicData.DataDelegates
         public readonly string email;
         public readonly string password;
 
-        public CreateUserDataDelegate(string name, string email, string password) : base("User.CreateUser")
+        public CreateUserDataDelegate(string name, string email, string password) : base("UserSignIn")
         {
             this.name = name;
             this.email = email;
