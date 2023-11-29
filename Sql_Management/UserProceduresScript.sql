@@ -76,6 +76,36 @@ GO
 -- EXEC SharedPlaylistFecth @UserId = 3;
 
 
+
+DROP PROCEDURE IF EXISTS RetrieveAllUserPlaylists
+GO
+CREATE PROCEDURE RetrieveAllUserPlaylists @UserId INT 
+AS
+SELECT P.PlaylistID,
+		P.PlaylistName,
+		P.IsPrivate,
+		P.IsDeleted
+FROM MusicManager.Playlist AS P
+WHERE P.PlaylistOwnerID = @UserId
+AND P.IsDeleted = 0
+UNION
+SELECT P.PlaylistID,
+		P.PlaylistName,
+		P.IsPrivate,
+		P.IsDeleted
+FROM MusicManager.Playlist AS P
+WHERE P.PlaylistID IN
+(
+	SELECT SUP.PlaylistID
+	FROM MusicManager.SharedUserPlaylist AS SUP
+	WHERE SUP.UserID = @UserId
+)
+AND P.IsDeleted = 0
+AND P.IsPrivate = 0
+GO
+-- EXEC RetrieveAllUserPlaylists @UserId = 1;
+
+
 DROP PROCEDURE IF EXISTS RetrieveAllUsers
 GO
 CREATE PROCEDURE RetrieveAllUsers 
@@ -101,3 +131,5 @@ Select *
 FROM #OwnedList
 GO
 -- EXEC GetUserOriginalPercntage @UserId = 1;
+
+
