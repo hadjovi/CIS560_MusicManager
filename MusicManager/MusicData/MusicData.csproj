@@ -204,6 +204,7 @@
     <Compile Include="DataDelegates\GetSongPlaylistLinkDataDelegate.cs" />
     <Compile Include="DataDelegates\GetUserDataDelegate.cs" />
     <Compile Include="DataDelegates\PlaylistUpdateIsPrivateDataDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveAllSongsFromPlaylistDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveArtistsAlbumDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveArtistsDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGenresDataDelegate.cs" />
@@ -235,7 +236,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+    <ProjectReference Include="..\..\..\..\DataAccessDemo2\DataAccessDemo2\DataAccess\DataAccess.csproj">
       <Project>{a5ac459d-6c0a-4d6e-ad65-ecb3e0fec3a7}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>

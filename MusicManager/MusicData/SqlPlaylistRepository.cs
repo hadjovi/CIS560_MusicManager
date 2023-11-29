@@ -34,5 +34,11 @@ namespace MusicData
             var d = new PlaylistUpdateIsPrivateDataDelegate(ownerId, playlistId, action);
             executor.ExecuteNonQuery(d);
         }
+
+        public IReadOnlyList<Song> RetrieveSongsFromPlaylist(int playlistId)
+        {
+            var d = new RetrieveAllSongsFromPlaylistDataDelegate(playlistId);
+            return executor.ExecuteReader(d);
+        }
     }
 }
