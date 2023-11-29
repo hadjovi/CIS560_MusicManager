@@ -7,6 +7,15 @@ FROM MusicManager.Song AS S
 GO
 -- EXEC RetrieveAllSongs 
 
+DROP PROCEDURE IF EXISTS RetrieveSongsFromPlaylist
+GO
+CREATE PROCEDURE RetrieveSongsFromPlaylist @PlaylistId INT
+AS
+SELECT S.SongID, S.SongName, S.Playtime, S.TrackNumber, S.GenreID, S.AlbumID
+FROM MusicManager.Song AS S
+	INNER JOIN MusicManager.SongPlaylistLink AS SP ON S.SongID = SP.SongID
+WHERE SP.PlaylistID = @PlaylistId
+GO
 
 DROP PROCEDURE IF EXISTS RetrieveAllAlbum
 GO

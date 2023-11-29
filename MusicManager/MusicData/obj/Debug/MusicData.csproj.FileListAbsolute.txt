@@ -81,3 +81,5 @@ C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicD
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CopyComplete
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.pdb
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.AssemblyReference.cache
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicData\obj\Debug\MusicData.csproj.CoreCompileInputs.cache
