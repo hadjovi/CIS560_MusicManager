@@ -13,6 +13,12 @@ namespace MusicData.DataDelegates
             this.userId = userId;
         }
 
+        public override void PrepareCommand(Command command)
+        {
+            base.PrepareCommand(command);
+
+            command.Parameters.AddWithValue("UserID", userId);
+        }
         public override IReadOnlyList<Playlist> Translate(Command command, IDataRowReader reader)
         {
             var playlists = new List<Playlist>();
