@@ -34,13 +34,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.udAddButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.uxAddButton = new System.Windows.Forms.Button();
+            this.uxResultBox = new System.Windows.Forms.DataGridView();
+            this.uxSongNameBox = new System.Windows.Forms.TextBox();
+            this.uxAlbumTitleBox = new System.Windows.Forms.TextBox();
             this.uxTrySearch = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.uxArtistNameBox = new System.Windows.Forms.TextBox();
+            this.uxCancel = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.uxResultBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,44 +89,38 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Playtime";
             // 
-            // udAddButton
+            // uxAddButton
             // 
-            this.udAddButton.Location = new System.Drawing.Point(348, 387);
-            this.udAddButton.Name = "udAddButton";
-            this.udAddButton.Size = new System.Drawing.Size(75, 23);
-            this.udAddButton.TabIndex = 5;
-            this.udAddButton.Text = "Add!";
-            this.udAddButton.UseVisualStyleBackColor = true;
+            this.uxAddButton.Location = new System.Drawing.Point(348, 387);
+            this.uxAddButton.Name = "uxAddButton";
+            this.uxAddButton.Size = new System.Drawing.Size(75, 23);
+            this.uxAddButton.TabIndex = 5;
+            this.uxAddButton.Text = "Add!";
+            this.uxAddButton.UseVisualStyleBackColor = true;
+            this.uxAddButton.Click += new System.EventHandler(this.udAddButton_Click);
             // 
-            // dataGridView1
+            // uxResultBox
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 105);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(693, 265);
-            this.dataGridView1.TabIndex = 6;
+            this.uxResultBox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.uxResultBox.Location = new System.Drawing.Point(39, 105);
+            this.uxResultBox.Name = "uxResultBox";
+            this.uxResultBox.RowTemplate.Height = 25;
+            this.uxResultBox.Size = new System.Drawing.Size(693, 265);
+            this.uxResultBox.TabIndex = 6;
             // 
-            // textBox1
+            // uxSongNameBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(60, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 7;
+            this.uxSongNameBox.Location = new System.Drawing.Point(60, 48);
+            this.uxSongNameBox.Name = "uxSongNameBox";
+            this.uxSongNameBox.Size = new System.Drawing.Size(100, 23);
+            this.uxSongNameBox.TabIndex = 7;
             // 
-            // textBox2
+            // uxAlbumTitleBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(218, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(378, 48);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 9;
+            this.uxAlbumTitleBox.Location = new System.Drawing.Point(218, 48);
+            this.uxAlbumTitleBox.Name = "uxAlbumTitleBox";
+            this.uxAlbumTitleBox.Size = new System.Drawing.Size(100, 23);
+            this.uxAlbumTitleBox.TabIndex = 8;
             // 
             // uxTrySearch
             // 
@@ -135,18 +130,39 @@
             this.uxTrySearch.TabIndex = 10;
             this.uxTrySearch.Text = "Try Search";
             this.uxTrySearch.UseVisualStyleBackColor = true;
+            this.uxTrySearch.Click += new System.EventHandler(this.uxTrySearch_Click);
+            // 
+            // uxArtistNameBox
+            // 
+            this.uxArtistNameBox.Location = new System.Drawing.Point(378, 48);
+            this.uxArtistNameBox.Name = "uxArtistNameBox";
+            this.uxArtistNameBox.Size = new System.Drawing.Size(100, 23);
+            this.uxArtistNameBox.TabIndex = 11;
+            // 
+            // uxCancel
+            // 
+            this.uxCancel.Location = new System.Drawing.Point(572, 387);
+            this.uxCancel.Name = "uxCancel";
+            this.uxCancel.Size = new System.Drawing.Size(75, 23);
+            this.uxCancel.TabIndex = 12;
+            this.uxCancel.Text = "Cancel";
+            this.uxCancel.UseVisualStyleBackColor = true;
+            this.uxCancel.Click += new System.EventHandler(this.uxCancel_Click);
             // 
             // SongAdd
             // 
+            this.AcceptButton = this.uxAddButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.uxCancel;
             this.ClientSize = new System.Drawing.Size(800, 422);
+            this.Controls.Add(this.uxCancel);
+            this.Controls.Add(this.uxArtistNameBox);
             this.Controls.Add(this.uxTrySearch);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.udAddButton);
+            this.Controls.Add(this.uxAlbumTitleBox);
+            this.Controls.Add(this.uxSongNameBox);
+            this.Controls.Add(this.uxResultBox);
+            this.Controls.Add(this.uxAddButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -155,7 +171,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SongAdd";
             this.Text = "Add Song";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxResultBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,11 +184,12 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button udAddButton;
-        private DataGridView dataGridView1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private Button uxAddButton;
+        private DataGridView uxResultBox;
+        private TextBox uxSongNameBox;
+        private TextBox uxAlbumTitleBox;
         private Button uxTrySearch;
+        private TextBox uxArtistNameBox;
+        private Button uxCancel;
     }
 }

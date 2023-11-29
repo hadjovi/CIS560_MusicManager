@@ -1,20 +1,12 @@
 ﻿using System;
+using MusicData.Models;
 
 namespace MusicManagerUI
 {
-    public class User
+    public class UiUser : User
     {
-        public int UserID { get; }
-        public string Name { get; }
-        public string Email { get; }
-        public string Password { get; }
-
-        public User(int userId, string name, string email, string password)
+        public UiUser(int userId, string name, string email, string password) : base(userId, name, email, password)
         {
-            UserID = userId;
-            Name = name;
-            Email = email.ToLower();
-            Password = password.ToLower();
         }
 
         /// <summary>
