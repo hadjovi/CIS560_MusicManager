@@ -7,10 +7,10 @@ namespace MusicData.DataDelegates
 {
     public class RetrievePlaylistsDataDelegate : DataReaderDelegate<IReadOnlyList<Playlist>>
     {
-        private readonly int ownerId;
-        public RetrievePlaylistsDataDelegate(int ownerId) : base("RetrieveAllUserPlaylists")
+        private readonly int userId;
+        public RetrievePlaylistsDataDelegate(int userId) : base("RetrieveAllUserPlaylists")
         {
-            this.ownerId = ownerId;
+            this.userId = userId;
         }
 
         public override IReadOnlyList<Playlist> Translate(Command command, IDataRowReader reader)
