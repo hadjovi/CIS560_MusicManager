@@ -378,7 +378,26 @@ GO
 -- EXEC ShowTotalRuntime;
 
 
-
+DROP PROCEDURE IF EXISTS ShowTotalRuntimePerPlaylist
+GO
+CREATE PROCEDURE ShowTotalRuntimePerPlaylist @PlaylistId INT 
+AS
+SELECT SPL.PlaylistID,
+	(
+		SELECT P.PlaylistName
+		FROM MusicManager.Playlist AS P
+		WHERE P.PlaylistID = SPL.PlaylistID
+	) AS PlaylistName,
+	COUNT(S.SongName) AS NumberOfSong,
+	SUM(S.Playtime) AS TotalPlaytime
+FROM MusicManager.SongPlaylistLink AS SPL
+	INNER JOIN MusicManager.Song AS S ON S.SongID = SPL.SongID
+WHERE SPL.PlaylistID = @PlaylistId
+GROUP BY SPL.PlaylistID
+--ORDER BY TotalRuntime DESC
+GO
+-- EXEC ShowTotalRuntimePerPlaylist @PlaylistId = 5;
+	
 
 DROP PROCEDURE IF EXISTS ShowColaboration  
 GO
