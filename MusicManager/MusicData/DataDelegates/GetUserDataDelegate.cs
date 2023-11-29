@@ -7,9 +7,11 @@ namespace MusicData.DataDelegates
     public class GetUserDataDelegate : DataReaderDelegate<User>
     {
         private readonly string email;
-        public GetUserDataDelegate(string email) : base("User.GetPerson")
+        private readonly string password;
+        public GetUserDataDelegate(string email, string password) : base("LoginFetch")
         {
             this.email = email;
+            this.password = password;
         }
 
         public override void PrepareCommand(Command command)
@@ -17,6 +19,7 @@ namespace MusicData.DataDelegates
             base.PrepareCommand(command);
 
             command.Parameters.AddWithValue("Email", email);
+            command.Parameters.AddWithValue("Password", password);
         }
         public override User Translate(Command command, IDataRowReader reader)
         {
@@ -27,7 +30,7 @@ namespace MusicData.DataDelegates
                 reader.GetInt32("UserID"),
                 reader.GetString("Name"),
                 email,
-                reader.GetString("Password"));
+                password);
         }
     }
 }

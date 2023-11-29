@@ -1,32 +1,34 @@
-DROP PROCEDURE IF EXISTS LoginFecth
+DROP PROCEDURE IF EXISTS LoginFetch
 GO
-CREATE PROCEDURE LoginFecth @UserEmail NVARCHAR(100), @UserPassword NVARCHAR(100)
+CREATE PROCEDURE LoginFetch @Email NVARCHAR(100), @Password NVARCHAR(100)
 AS
 SELECT U.UserID,
 		U.[Name]
 FROM MusicManager.[User] AS U
-WHERE U.Email = @UserEmail
-AND U.[Password] = @UserPassword
+WHERE U.Email = @Email
+AND U.[Password] = @Password
 GO
 -- EXEC LoginFecth @UserEmail = 'ben@ben.com', @UserPassword = 'passwordB560';
 -- EXEC LoginFecth @UserEmail = 'dang@dang.com', @UserPassword = 'passwordD560';
 
 DROP PROCEDURE IF EXISTS UserSignIn
 GO
-CREATE PROCEDURE UserSignIn @UserName NVARCHAR(100), @UserEmail NVARCHAR(100), @UserPassword NVARCHAR(100)
+CREATE PROCEDURE UserSignIn @Name NVARCHAR(100), @Email NVARCHAR(100), @Password NVARCHAR(100), @UserID INT OUTPUT
 AS
 WITH SourceCte(UserName, UserEmail, UserPassword) AS
    (
 	SELECT *
 	FROM(
-		VALUES(@UserName, @UserEmail, @UserPassword)
+		VALUES(@Name, @Email, @Password)
 	)NA(UserName, UserEmail, UserPassword)     
    )
 MERGE MusicManager.[User] U
 USING SourceCte S ON S.UserEmail = U.Email
 WHEN NOT MATCHED THEN
    INSERT([Name], Email, [Password])
-   VALUES(@UserName, @UserEmail, @UserPassword);
+   VALUES(@Name, @Email, @Password);
+
+SET @UserID = SCOPE_IDENTITY()
 GO
 
 -- EXEC UserSignIn @UserName = Ben, @UserEmail = 'ben@ben.com', @UserPassword = 'passwordB560';
@@ -38,7 +40,8 @@ CREATE PROCEDURE UserOwnedPlaylistFecth @UserId INT
 AS
 SELECT P.PlaylistID,
 		P.PlaylistName,
-		P.IsPrivate
+		P.IsPrivate,
+		P.IsDeleted
 FROM MusicManager.Playlist AS P
 WHERE P.PlaylistOwnerID = @UserId
 AND P.IsDeleted = 0
@@ -103,10 +106,12 @@ GO
 
 DROP PROCEDURE IF EXISTS CreatePlaylist
 GO
-CREATE PROCEDURE CreatePlaylist @UserId INT, @PlaylistName NVARCHAR(100), @IsPrivate BIT
+CREATE PROCEDURE CreatePlaylist @PlaylistName NVARCHAR(100), @PlaylistOwnerID INT, @IsPrivate BIT, @IsDeleted BIT, @PlaylistID INT OUT
 AS
-INSERT MusicManager.Playlist (PlaylistName, PlaylistOwnerID, IsPrivate)
-VALUES (@PlaylistName, @UserId, @IsPrivate)	
+INSERT MusicManager.Playlist (PlaylistName, PlaylistOwnerID, IsPrivate, IsDeleted)
+VALUES (@PlaylistName, @PlaylistOwnerID, @IsPrivate, @IsDeleted)	
+
+SET @PlaylistID = SCOPE_IDENTITY()
 GO
 -- EXEC CreatePlaylist @UserId = 2, @PlaylistName = 'TestPlayList', @IsPrivate = 0;
 

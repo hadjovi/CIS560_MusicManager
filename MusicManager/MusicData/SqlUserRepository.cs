@@ -29,15 +29,15 @@ namespace MusicData
             return executor.ExecuteNonQuery(d);
         }
 
-        public User FetchPerson(int userId)
+        public User FetchUser(int userId)
         {
             var d = new FetchUserDataDelegate(userId);
             return executor.ExecuteReader(d);
         }
 
-        public User GetUser(string email)
+        public User GetUser(string email, string password)
         {
-            var d = new GetUserDataDelegate(email);
+            var d = new GetUserDataDelegate(email, password);
             return executor.ExecuteReader(d);
         }
 
