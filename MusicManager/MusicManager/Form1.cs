@@ -26,11 +26,11 @@ namespace MusicManager
 
             loginDialog();
             setLibrary(SignedIn);
-            uxPlaylists.DataSource = currentLibrary;
             uxPlaylists.Columns["PlaylistID"].Visible = false;
             uxPlaylists.Columns["PlaylistOwnerID"].Visible = false;
             uxPlaylists.Columns["IsPrivate"].Visible = false;
             uxPlaylists.Columns["isDeleted"].Visible = false;
+            uxPlaylists.ClearSelection();
     }
 
 
@@ -112,16 +112,24 @@ namespace MusicManager
         private void setLibrary(User u)
         {
             LibOwner = u;
-            MessageBox.Show(u.UserID.ToString());
-            currentLibrary = new();
+            currentLibrary = new();//reset source
             IReadOnlyList<Playlist> readPlaylist= pRepo.RetrievePlaylists(u.UserID);
             foreach(Playlist p in readPlaylist)
             {
-                if (!p.IsPrivate || u.UserID == SignedIn.UserID)
+                if (u.UserID == SignedIn.UserID)
                 {
                     currentLibrary.Add(new Playlist(p.PlaylistID, p.PlaylistName, p.PlaylistOwnerID, p.IsPrivate, p.IsDeleted));
                 }
             }
+            foreach (Playlist p in readPlaylist)
+            {
+                if (!p.IsPrivate && u.UserID != SignedIn.UserID)
+                {
+                    currentLibrary.Add(new Playlist(p.PlaylistID, p.PlaylistName, p.PlaylistOwnerID, p.IsPrivate, p.IsDeleted));
+                }
+            }
+            uxPlaylists.DataSource = currentLibrary;
+
             uxLibraryOwnerName.Text = u + "'s Library";
             setPlaylistViewInvisible();
         }
@@ -143,8 +151,11 @@ namespace MusicManager
                 currentPlaylist = row.DataBoundItem as Playlist;
             }
 
-            uxPlaylistName.Text = currentPlaylist.PlaylistName;
-            uxPlaylistOwnerName.Text = currentPlaylist.PlaylistOwnerID.ToString();// Convert to PLAYLIST OWNER NAME!!!!!!!!
+
+
+
+            uxPlaylistName.Text = "Playlist Name: "+currentPlaylist.PlaylistName;
+            uxPlaylistOwnerName.Text = "Is owned by: "+currentPlaylist.PlaylistOwnerID.ToString();// Convert to PLAYLIST OWNER NAME!!!!!!!!
             setPlaylistViewVisible();
         }
 

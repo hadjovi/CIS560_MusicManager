@@ -67,14 +67,14 @@
             this.uxEmailBox.Location = new System.Drawing.Point(89, 26);
             this.uxEmailBox.Name = "uxEmailBox";
             this.uxEmailBox.Size = new System.Drawing.Size(149, 23);
-            this.uxEmailBox.TabIndex = 3;
+            this.uxEmailBox.TabIndex = 1;
             // 
             // uxLoginButton
             // 
             this.uxLoginButton.Location = new System.Drawing.Point(89, 93);
             this.uxLoginButton.Name = "uxLoginButton";
             this.uxLoginButton.Size = new System.Drawing.Size(75, 23);
-            this.uxLoginButton.TabIndex = 4;
+            this.uxLoginButton.TabIndex = 3;
             this.uxLoginButton.Text = "Submit";
             this.uxLoginButton.UseVisualStyleBackColor = true;
             this.uxLoginButton.Click += new System.EventHandler(this.uxLoginButton_Click);
@@ -95,10 +95,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(266, 126);
+            this.Controls.Add(this.uxPasswordBox);
             this.Controls.Add(this.uxEmailBox);
             this.Controls.Add(this.uxLoginBad);
             this.Controls.Add(this.uxLoginButton);
-            this.Controls.Add(this.uxPasswordBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
