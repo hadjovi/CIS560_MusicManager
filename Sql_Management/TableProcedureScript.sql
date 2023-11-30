@@ -476,3 +476,18 @@ Select *
 FROM #OwnedList
 GO
 -- EXEC GetUserOriginalPercntage @UserId = 1;
+
+
+	
+DROP PROCEDURE IF EXISTS GetMostPopularGenres
+GO
+CREATE PROCEDURE GetMostPopularGenres
+AS
+SELECT G.GenreID,
+ G.GenreName,
+ COUNT(S.SongID) AS NumberOfSongs
+FROM MusicManager.Genre AS G
+ INNER JOIN MusicManager.Song AS S ON S.GenreID = G.GenreID
+GROUP BY G.GenreID, G.GenreName
+ORDER BY NumberOfSongs DESC;
+-- EXEC GetMostPopularGenres;
