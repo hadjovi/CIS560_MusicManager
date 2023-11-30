@@ -35,6 +35,7 @@ C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.pdb
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.dll.config
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.AssemblyReference.cache
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.CreatePlaylistDialog.resources
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManager.Form1.resources
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.LoginDialog.resources
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.PlaylistSettingsDialog.resources

@@ -14,41 +14,9 @@ GO
 
 
 
-DROP PROCEDURE IF EXISTS ShowArtistGenre  
+DROP PROCEDURE IF EXISTS ShowCollaboration  
 GO
-CREATE PROCEDURE ShowArtistGenre @ArtistID INT
-AS
-WITH SongGenreCTE(AlbumID, SongName, GenreName) AS
-(
-	SELECT S.AlbumID,
-	S.SongName,
-	(
-		SELECT G.GenreName
-		FROM MusicManager.Genre AS G
-		WHERE G.GenreID = S.GenreID
-	) AS GenreName
-	FROM MusicManager.ArtistsAlbum AS AA 
-		INNER JOIN MusicManager.Song AS S ON S.AlbumID = AA.AlbumID
-	WHERE AA.ArtistID = @ArtistID
-)
-SELECT AA.ArtistID,
-	(
-		SELECT A.ArtistName
-		FROM MusicManager.Artist AS A
-		WHERE A.ArtistID = AA.ArtistID
-	) AS ArtistName,
-	ACTE.SongName,
-	ACTE.GenreName
-FROM MusicManager.ArtistsAlbum AS AA
-	INNER JOIN SongGenreCTE AS ACTE ON ACTE.AlbumID = AA.AlbumID
-WHERE AA.ArtistID <> @ArtistID
-GO
--- EXEC ShowArtistGenre @ArtistID = 6;
-
-
-DROP PROCEDURE IF EXISTS ShowColaboration  
-GO
-CREATE PROCEDURE ShowColaboration @ArtistID INT
+CREATE PROCEDURE ShowCollaboration @ArtistID INT
 AS
 WITH AlbumCTE(AlbumID, AlbumName) AS
 (
@@ -72,7 +40,7 @@ FROM MusicManager.ArtistsAlbum AS AA
 	INNER JOIN AlbumCTE AS ACTE ON ACTE.AlbumID = AA.AlbumID
 WHERE AA.ArtistID <> @ArtistID
 GO
--- EXEC ShowColaboration @ArtistID = 6;
+-- EXEC ShowCollaboration @ArtistID = 6;
 
 
 DROP PROCEDURE IF EXISTS ShowTotalRuntimePerPlaylist
