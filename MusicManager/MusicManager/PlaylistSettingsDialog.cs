@@ -1,4 +1,5 @@
-﻿using MusicData.Models;
+﻿using MusicData;
+using MusicData.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,8 @@ namespace MusicManagerUI
     public partial class PlaylistSettingsDialog : Form
     {
         Playlist P;
+        SqlPlaylistRepository pRepo = new SqlPlaylistRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+
         public PlaylistSettingsDialog(Playlist Play)
         {
             InitializeComponent();
@@ -28,20 +31,30 @@ namespace MusicManagerUI
             {
                 //Update Name
             }
-            if (!P.IsPrivate == uxIsPrivate.Checked)
+            if (!(P.IsPrivate == uxIsPrivate.Checked))
             {
                 //Update Privacy
+                if (uxIsPrivate.Checked)
+                {
+                    pRepo.SetOwnedPlaylistPublic(P.PlaylistOwnerID, P.PlaylistID, "SetOwnedPlaylistPrivate");
+                }
+                else
+                {
+                    pRepo.SetOwnedPlaylistPublic(P.PlaylistOwnerID, P.PlaylistID, "SetOwnedPlaylistPublic");
+
+                }
             }
             if(!P.IsDeleted == uxDeletePlaylist.Checked)
             {
                 //Update Deleted
+                pRepo.DeletePlaylist(P.PlaylistOwnerID, P.PlaylistID);
             }
             DialogResult = DialogResult.OK;
         }
 
         private void uxCancel_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
+            DialogResult = DialogResult.Cancel;
         }
     }
 }

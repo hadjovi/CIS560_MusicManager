@@ -137,8 +137,10 @@ namespace MusicManager
             }
 
             uxPlaylists.DataSource = currentLibrary;
-            setPlaylistViewInvisible();
-
+            if (currentLibrary.Count == 0)
+            {
+                setPlaylistViewInvisible();
+            }
             uxLibraryOwnerName.Text = u + "'s Library";
         }
         private void uxMyPlaylists_Click(object sender, EventArgs e)
@@ -188,6 +190,42 @@ namespace MusicManager
             }
 
             setPlaylistViewVisible();
+
+            if(currentPlaylist.PlaylistOwnerID == SignedIn.UserID)
+            {
+                uxPlaylistSettings.Enabled = true;
+            }
+            else
+            {
+                uxPlaylistSettings.Enabled = false;
+            }
+
+
+
+            List<Playlist> TempLibrary = new();
+            IReadOnlyList<Playlist> readPlaylist = pRepo.RetrievePlaylists(SignedIn.UserID);
+            foreach (Playlist p in readPlaylist)
+            {
+                if (!p.IsPrivate && (p.PlaylistOwnerID != SignedIn.UserID) && !(p.IsDeleted))
+                {
+                    TempLibrary.Add(new Playlist(p.PlaylistID, p.PlaylistName, p.PlaylistOwnerID, p.IsPrivate, p.IsDeleted));
+                }
+            }
+            bool Owned = false;
+            foreach(Playlist p in TempLibrary)
+            {
+                if (p.PlaylistID == currentPlaylist.PlaylistID) Owned = true;
+            }
+            if (!Owned)
+            {
+                uxAddToLib.Enabled = true;
+                uxRemovePlaylist.Enabled = false;
+            }
+            else
+            {
+                uxAddToLib.Enabled = false;
+                uxRemovePlaylist.Enabled = true;
+            }
         }
 
         private void uxAddSong_Click(object sender, EventArgs e)
@@ -219,24 +257,66 @@ namespace MusicManager
 
         }
 
-        private List<UiSong> ConvertSongList(List<Song> s)
-        {
-            List<UiSong> UI = new();
-
-
-
-
-            return UI;
-        }
-
         private void uxDeleteSong_Click(object sender, EventArgs e)
         {
-            Song delSong;
+            Song delSong = allSongList[0];
             foreach (DataGridViewRow row in uxSongslist.SelectedRows)
             {
                 delSong = row.DataBoundItem as Song;
             }
-            
+            try
+            {
+                pRepo.DeleteSongFromPlaylist(delSong.SongID, currentPlaylist.PlaylistID);
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
+            uxSongslist.DataSource = null;
+            currentPlaylistSongs = new();
+
+            IReadOnlyList<Song> readSong = pRepo.RetrieveSongsFromPlaylist(currentPlaylist.PlaylistID);
+
+            foreach (Song s in readSong)
+            {
+                currentPlaylistSongs.Add(new Song(s.SongID, s.SongName, s.Playtime, s.TrackNumber, s.GenreID, s.AlbumID));
+            }
+
+
+            uxPlaylistName.Text = "Playlist Name: " + currentPlaylist.PlaylistName;
+            uxPlaylistOwnerName.Text = "Is owned by: " + currentPlaylist.PlaylistOwnerID.ToString();// Convert to PLAYLIST OWNER NAME!!!!!!!!
+
+            uxSongslist.DataSource = currentPlaylistSongs;
+        }
+
+        private void uxCreatePlaylist_Click(object sender, EventArgs e)
+        {
+            CreatePlaylistDialog CPD = new CreatePlaylistDialog();
+            CPD.ShowDialog();
+            if (CPD.DialogResult == DialogResult.OK)
+            {
+                pRepo.CreatePlaylist(CPD.playName, SignedIn.UserID, CPD.isPrivate, false);
+            }
+            setLibrary(SignedIn);
+        }
+
+        private void uxPlaylistSettings_Click(object sender, EventArgs e)
+        {
+            PlaylistSettingsDialog PS = new PlaylistSettingsDialog(currentPlaylist);
+            PS.ShowDialog();
+            setLibrary(SignedIn);
+        }
+
+        private void uxAddToLib_Click(object sender, EventArgs e)
+        {
+            pRepo.AddFriendPlaylist(currentPlaylist.PlaylistID, SignedIn.UserID);
+            setLibrary(SignedIn);
+        }
+
+        private void uxRemovePlaylist_Click(object sender, EventArgs e)
+        {
+            pRepo.DeleteFriendPlaylist(currentPlaylist.PlaylistID, SignedIn.UserID);
+            setLibrary(SignedIn);
         }
     }
 }
