@@ -7,7 +7,7 @@ namespace MusicData.DataDelegates
 {
     public class RetrieveSongsDataDelegate : DataReaderDelegate<IReadOnlyList<Song>>
     {
-        public RetrieveSongsDataDelegate() : base("Song.RetrieveSong")
+        public RetrieveSongsDataDelegate() : base("RetrieveAllSongs")
         {
         }
 

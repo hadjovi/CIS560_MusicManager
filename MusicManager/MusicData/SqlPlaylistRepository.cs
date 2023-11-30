@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using DataAccess;
 using MusicData.DataDelegates;
-using System.Security.Cryptography.Pkcs;
 
 namespace MusicData
 {
@@ -39,6 +38,12 @@ namespace MusicData
         {
             var d = new RetrieveAllSongsFromPlaylistDataDelegate(playlistId);
             return executor.ExecuteReader(d);
+        }
+
+        public void AddSongToPlaylist(int userId, int playlistId)
+        {
+            var d = new AddSongToPlaylistDataDelegate(userId, playlistId);
+            executor.ExecuteNonQuery(d);
         }
     }
 }

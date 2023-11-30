@@ -10,3 +10,9 @@ C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\DataAc
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.pdb
