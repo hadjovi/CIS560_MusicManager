@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj": {}
+    "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -19,16 +19,16 @@
         "net48": {}
       }
     },
-    "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj": {
+    "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj",
+        "projectUniqueName": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj",
         "projectName": "MusicData",
-        "projectPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj",
+        "projectPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -38,21 +38,17 @@
         "net48": {}
       }
     },
-    "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj": {
+    "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
+        "projectUniqueName": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
         "projectName": "MusicManagerUI",
-        "projectPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
-        "packagesPath": "C:\\Users\\benke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicManager\\obj\\",
+        "projectPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicManager\\MusicManagerUI.csproj",
+        "packagesPath": "C:\\Users\\rayan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicManager\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\benke\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\rayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,11 +62,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj": {
-                "projectPath": "C:\\Users\\benke\\Documents\\CIS 560\\Final Project\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj"
+              "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj": {
+                "projectPath": "C:\\Users\\rayan\\OneDrive\\Bureau\\K-State\\Fall 2023\\CIS 560\\Project_MusicManager\\CIS560_MusicManager\\MusicManager\\MusicData\\MusicData.csproj"
               }
             }
           }
@@ -109,7 +105,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

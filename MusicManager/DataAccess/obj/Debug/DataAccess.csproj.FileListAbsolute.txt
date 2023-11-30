@@ -4,3 +4,9 @@ C:\Users\benke\Documents\CIS 560\DataAccessDemo2\DataAccessDemo2\DataAccess\obj\
 C:\Users\benke\Documents\CIS 560\DataAccessDemo2\DataAccessDemo2\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\benke\Documents\CIS 560\DataAccessDemo2\DataAccessDemo2\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\benke\Documents\CIS 560\DataAccessDemo2\DataAccessDemo2\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\DataAccess\obj\Debug\DataAccess.pdb
