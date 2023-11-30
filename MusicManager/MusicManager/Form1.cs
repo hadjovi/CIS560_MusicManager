@@ -219,10 +219,12 @@ namespace MusicManager
             if (!Owned)
             {
                 uxAddToLib.Enabled = true;
+                uxRemovePlaylist.Enabled = false;
             }
             else
             {
                 uxAddToLib.Enabled = false;
+                uxRemovePlaylist.Enabled = true;
             }
         }
 
@@ -302,6 +304,18 @@ namespace MusicManager
         {
             PlaylistSettingsDialog PS = new PlaylistSettingsDialog(currentPlaylist);
             PS.ShowDialog();
+            setLibrary(SignedIn);
+        }
+
+        private void uxAddToLib_Click(object sender, EventArgs e)
+        {
+            pRepo.AddFriendPlaylist(currentPlaylist.PlaylistID, SignedIn.UserID);
+            setLibrary(SignedIn);
+        }
+
+        private void uxRemovePlaylist_Click(object sender, EventArgs e)
+        {
+            pRepo.DeleteFriendPlaylist(currentPlaylist.PlaylistID, SignedIn.UserID);
             setLibrary(SignedIn);
         }
     }

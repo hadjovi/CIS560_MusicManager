@@ -50,6 +50,7 @@
             this.uxDeleteSong = new System.Windows.Forms.Button();
             this.uxCreatePlaylist = new System.Windows.Forms.Button();
             this.uxAddToLib = new System.Windows.Forms.Button();
+            this.uxRemovePlaylist = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxSongslist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxPlaylists)).BeginInit();
             this.SuspendLayout();
@@ -268,12 +269,24 @@
             this.uxAddToLib.TabIndex = 24;
             this.uxAddToLib.Text = "Add Playlist to Library";
             this.uxAddToLib.UseVisualStyleBackColor = true;
+            this.uxAddToLib.Click += new System.EventHandler(this.uxAddToLib_Click);
+            // 
+            // uxRemovePlaylist
+            // 
+            this.uxRemovePlaylist.Location = new System.Drawing.Point(188, 407);
+            this.uxRemovePlaylist.Name = "uxRemovePlaylist";
+            this.uxRemovePlaylist.Size = new System.Drawing.Size(123, 40);
+            this.uxRemovePlaylist.TabIndex = 25;
+            this.uxRemovePlaylist.Text = "Remove Friend Playlist from Library";
+            this.uxRemovePlaylist.UseVisualStyleBackColor = true;
+            this.uxRemovePlaylist.Click += new System.EventHandler(this.uxRemovePlaylist_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.uxRemovePlaylist);
             this.Controls.Add(this.uxAddToLib);
             this.Controls.Add(this.uxCreatePlaylist);
             this.Controls.Add(this.uxDeleteSong);
@@ -327,5 +340,6 @@
         private Button uxDeleteSong;
         private Button uxCreatePlaylist;
         private Button uxAddToLib;
+        private Button uxRemovePlaylist;
     }
 }
