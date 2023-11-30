@@ -40,9 +40,21 @@ namespace MusicData
             return executor.ExecuteReader(d);
         }
 
-        public void AddSongToPlaylist(int userId, int playlistId)
+        public void AddSongToPlaylist(int songId, int playlistId)
         {
-            var d = new AddSongToPlaylistDataDelegate(userId, playlistId);
+            var d = new AddSongToPlaylistDataDelegate(songId, playlistId);
+            executor.ExecuteNonQuery(d);
+        }
+
+        public void DeleteSongFromPlaylist(int songId, int playlistId)
+        {
+            var d = new DeleteSongFromPlaylistDataDelegate(songId, playlistId);
+            executor.ExecuteNonQuery(d);
+        }
+
+        public void DeletePlaylist(int userId, int playlistId)
+        {
+            var d = new DeletePlaylistDataDelegate(userId, playlistId);
             executor.ExecuteNonQuery(d);
         }
     }
