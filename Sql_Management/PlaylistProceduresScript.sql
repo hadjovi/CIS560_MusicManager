@@ -53,6 +53,14 @@ VALUES (@PlaylistID, @NewUserID)
 SET @SharedUserPlaylistID = SCOPE_IDENTITY()
 GO
 
+DROP PROCEDURE IF EXISTS DeleteFriendPlaylist
+GO
+CREATE PROCEDURE DeleteFriendPlaylist @PlaylistId INT, @UserId INT
+AS
+DELETE FROM MusicManager.SharedUserPlaylist
+WHERE PlaylistID = @PlaylistId
+   AND UserID = @UserID;
+GO
 
 DROP PROCEDURE IF EXISTS DeleteOwnedPlaylist
 GO

@@ -187,6 +187,7 @@
     <Compile Include="DataDelegates\CreateSongDataDelegate.cs" />
     <Compile Include="DataDelegates\CreateSongPlaylistLinkDataDelegate.cs" />
     <Compile Include="DataDelegates\CreateUserDataDelegate.cs" />
+    <Compile Include="DataDelegates\DeleteFriendPlaylistDataDelegate.cs" />
     <Compile Include="DataDelegates\DeletePlaylistDataDelegate.cs" />
     <Compile Include="DataDelegates\DeleteSongFromPlaylistDataDelegate.cs" />
     <Compile Include="DataDelegates\FetchAlbumDataDelegate.cs" />
