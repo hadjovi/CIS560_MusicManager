@@ -10,7 +10,7 @@ namespace MusicData.DataDelegates
         public readonly int playlistId;
         public readonly int userId;
 
-        public CreateSharedUserPlaylistDataDelegate(int playlistId, int userId) : base("SharedUserPlaylist.CreateSharedUserPlaylist")
+        public CreateSharedUserPlaylistDataDelegate(int playlistId, int userId) : base("AddFriendPlaylist")
         {
             this.playlistId = playlistId;
             this.userId = userId;

@@ -57,5 +57,17 @@ namespace MusicData
             var d = new DeletePlaylistDataDelegate(userId, playlistId);
             executor.ExecuteNonQuery(d);
         }
+
+        public void AddFriendPlaylist(int playlistId, int userId)
+        {
+            var d = new CreateSharedUserPlaylistDataDelegate(playlistId, userId);
+            executor.ExecuteNonQuery(d);
+        }
+
+        public void DeleteFriendPlaylist(int playlistId, int userId)
+        {
+            var d = new DeleteFriendPlaylistDataDelegate(playlistId, userId);
+            executor.ExecuteNonQuery(d);
+        }
     }
 }

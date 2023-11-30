@@ -43,7 +43,24 @@ SET @PlaylistID = SCOPE_IDENTITY()
 GO
 -- EXEC CreatePlaylist @UserId = 2, @PlaylistName = 'TestPlayList', @IsPrivate = 0;
 
+DROP PROCEDURE IF EXISTS AddFriendPlaylist
+GO
+CREATE PROCEDURE AddFriendPlaylist @PlaylistID INT, @NewUserId INT, @SharedUserPlaylistID INT OUT
+AS
+INSERT MusicManager.SharedUserPlaylist (PlaylistID, UserID)
+VALUES (@PlaylistID, @NewUserID)	
 
+SET @SharedUserPlaylistID = SCOPE_IDENTITY()
+GO
+
+DROP PROCEDURE IF EXISTS DeleteFriendPlaylist
+GO
+CREATE PROCEDURE DeleteFriendPlaylist @PlaylistId INT, @UserId INT
+AS
+DELETE FROM MusicManager.SharedUserPlaylist
+WHERE PlaylistID = @PlaylistId
+   AND UserID = @UserID;
+GO
 
 DROP PROCEDURE IF EXISTS DeleteOwnedPlaylist
 GO
