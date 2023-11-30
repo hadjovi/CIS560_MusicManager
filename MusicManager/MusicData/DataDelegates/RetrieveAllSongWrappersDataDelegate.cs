@@ -7,7 +7,7 @@ namespace MusicData.DataDelegates
 {
     public class RetrieveAllSongWrappersDataDelegate : DataReaderDelegate<IReadOnlyList<SongInfoWrapper>>
     {
-        public RetrieveAllSongWrappersDataDelegate() : base("ShRetrieveAllSongsWithEverything")
+        public RetrieveAllSongWrappersDataDelegate() : base("RetrieveAllSongsWithEverything")
         {
         }
 
