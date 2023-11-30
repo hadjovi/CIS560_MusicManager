@@ -122,6 +122,7 @@
             // 
             // uxAlbumTitleBox
             // 
+            this.uxAlbumTitleBox.Enabled = false;
             this.uxAlbumTitleBox.Location = new System.Drawing.Point(218, 48);
             this.uxAlbumTitleBox.Name = "uxAlbumTitleBox";
             this.uxAlbumTitleBox.Size = new System.Drawing.Size(100, 23);
@@ -139,6 +140,7 @@
             // 
             // uxArtistNameBox
             // 
+            this.uxArtistNameBox.Enabled = false;
             this.uxArtistNameBox.Location = new System.Drawing.Point(378, 48);
             this.uxArtistNameBox.Name = "uxArtistNameBox";
             this.uxArtistNameBox.Size = new System.Drawing.Size(100, 23);

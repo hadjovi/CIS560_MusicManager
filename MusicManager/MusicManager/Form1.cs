@@ -174,6 +174,7 @@ namespace MusicManager
                 currentPlaylist = row.DataBoundItem as Playlist;
             }
             currentPlaylistSongs = new();
+            SuperCurrentPlaylistSongs = new();
 
             IReadOnlyList<Song> readSong = pRepo.RetrieveSongsFromPlaylist(currentPlaylist.PlaylistID);
 
@@ -277,6 +278,9 @@ namespace MusicManager
 
         private void uxStats_Click(object sender, EventArgs e)
         {
+            StatsDisplayDialog SDD = new StatsDisplayDialog();
+            SDD.ShowDialog();
+
 
         }
 

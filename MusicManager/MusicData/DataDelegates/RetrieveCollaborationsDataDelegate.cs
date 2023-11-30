@@ -8,7 +8,7 @@ namespace MusicData.DataDelegates
     public class RetrieveCollaborationsDataDelegate : DataReaderDelegate<IReadOnlyList<Collaboration>>
     {
         private readonly int artistId;
-        public RetrieveCollaborationsDataDelegate(int artistId) : base("ShowCollaboration")
+        public RetrieveCollaborationsDataDelegate(int artistId) : base("ShowColaboration")
         {
             this.artistId = artistId;
         }
