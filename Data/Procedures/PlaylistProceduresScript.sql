@@ -43,6 +43,8 @@ SET @PlaylistID = SCOPE_IDENTITY()
 GO
 -- EXEC CreatePlaylist @UserId = 2, @PlaylistName = 'TestPlayList', @IsPrivate = 0;
 
+
+
 DROP PROCEDURE IF EXISTS AddFriendPlaylist
 GO
 CREATE PROCEDURE AddFriendPlaylist @PlaylistID INT, @NewUserId INT, @SharedUserPlaylistID INT OUT
@@ -53,6 +55,8 @@ VALUES (@PlaylistID, @NewUserID)
 SET @SharedUserPlaylistID = SCOPE_IDENTITY()
 GO
 
+
+
 DROP PROCEDURE IF EXISTS DeleteFriendPlaylist
 GO
 CREATE PROCEDURE DeleteFriendPlaylist @PlaylistId INT, @UserId INT
@@ -61,6 +65,8 @@ DELETE FROM MusicManager.SharedUserPlaylist
 WHERE PlaylistID = @PlaylistId
    AND UserID = @UserID;
 GO
+
+
 
 DROP PROCEDURE IF EXISTS DeleteOwnedPlaylist
 GO
@@ -77,6 +83,7 @@ GO
 -- EXEC DeleteOwnedPlaylist @UserId = 1, @PlaylistId = 4;
 
 
+
 DROP PROCEDURE IF EXISTS AddSongToPlaylist
 GO
 CREATE PROCEDURE AddSongToPlaylist @PlaylistID INT, @SongId INT
@@ -87,6 +94,7 @@ GO
 -- EXEC AddSongToPlaylist @PlaylistID = 10, @SongId = 1
 
 
+
 DROP PROCEDURE IF EXISTS DeleteSongFromPlaylist
 GO
 CREATE PROCEDURE DeleteSongFromPlaylist @PlaylistID INT, @SongId INT
@@ -95,4 +103,25 @@ DELETE FROM MusicManager.SongPlaylistLink
 WHERE SongID = @SongId
    AND PlaylistID = @PlaylistID;
 GO
--- EXEC DeleteSongFromPlaylist @PlaylistID = 10, @SongId = 1
+-- EXEC DeleteSongFromPlaylist @PlaylistID = 10, @SongId = 1.
+
+
+DROP PROCEDURE IF EXISTS ShowTotalRuntimePerPlaylist
+GO
+CREATE PROCEDURE ShowTotalRuntimePerPlaylist @PlaylistId INT 
+AS
+SELECT SPL.PlaylistID,
+	(
+		SELECT P.PlaylistName
+		FROM MusicManager.Playlist AS P
+		WHERE P.PlaylistID = SPL.PlaylistID
+	) AS PlaylistName,
+	COUNT(S.SongName) AS NumberOfSong,
+	SUM(S.Playtime) AS TotalPlaytime
+FROM MusicManager.SongPlaylistLink AS SPL
+	INNER JOIN MusicManager.Song AS S ON S.SongID = SPL.SongID
+WHERE SPL.PlaylistID = @PlaylistId
+GROUP BY SPL.PlaylistID
+--ORDER BY TotalRuntime DESC
+GO
+-- EXEC ShowTotalRuntimePerPlaylist @PlaylistId = 5;

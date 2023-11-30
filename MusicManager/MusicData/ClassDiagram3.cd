@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MusicData.DataDelegates.AddSongToPlaylistDataDelegate" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataDelegates\AddSongToPlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.CreatePlaylistDataDelegate" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAACAAAAAAAAAAAAAAAAAAAAAAQABAAQEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\CreatePlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.CreateSharedUserPlaylistDataDelegate" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEACAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\CreateSharedUserPlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.CreateSongDataDelegate" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACgAAAAAAAAgAAAAAAAAAAAAIIAAAAEAAAAAIA=</HashCode>
+      <FileName>DataDelegates\CreateSongDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.CreateSongPlaylistLinkDataDelegate" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEAAQAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\CreateSongPlaylistLinkDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.CreateUserDataDelegate" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAgAAAAAAAAAAAEAAAAAAAEAgAAAAA=</HashCode>
+      <FileName>DataDelegates\CreateUserDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.DeleteFriendPlaylistDataDelegate" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataDelegates\DeleteFriendPlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.DeletePlaylistDataDelegate" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataDelegates\DeletePlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.DeleteSongFromPlaylistDataDelegate" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataDelegates\DeleteSongFromPlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchAlbumDataDelegate" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchAlbumDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchArtistDataDelegate" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchArtistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchArtistsAlbumDataDelegate" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchArtistsAlbumDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchGenreDataDelegate" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchGenreDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchPlaylistDataDelegate" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchPlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchSharedUserPlaylistDataDelegate" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchSharedUserPlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchSongDataDelegate" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchSongDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchSongPlaylistLinkDataDelegate" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchSongPlaylistLinkDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.FetchUserDataDelegate" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\FetchUserDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetAlbumDataDelegate" Collapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\GetAlbumDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetArtistsAlbumDataDelegate" Collapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAEEAAAAAA=</HashCode>
+      <FileName>DataDelegates\GetArtistsAlbumDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetGenreDataDelegate" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAA=</HashCode>
+      <FileName>DataDelegates\GetGenreDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetRuntimePerPlaylist" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\GetRuntimePerPlaylist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetSharedUserPlaylistDataDelegate" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEACAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\GetSharedUserPlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetSongByNameDataDelegate" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAAIA=</HashCode>
+      <FileName>DataDelegates\GetSongByNameDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetSongByTrackNumberDataDelegate" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAIIAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\GetSongByTrackNumberDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetSongPlaylistLinkDataDelegate" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEAAQAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\GetSongPlaylistLinkDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.GetUserDataDelegate" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAgAAAAA=</HashCode>
+      <FileName>DataDelegates\GetUserDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.PlaylistUpdateIsPrivateDataDelegate" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataDelegates\PlaylistUpdateIsPrivateDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveAlbumsDataDelegate" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveAlbumsDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveAllSongsFromPlaylistDataDelegate" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveAllSongsFromPlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveAllSongWrappersDataDelegate" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveAllSongWrappersDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveArtistsAlbumsDataDelegate" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveArtistsAlbumDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveArtistsDataDelegate" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveArtistsDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveCollaborationsDataDelegate" Collapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveCollaborationsDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveGenresDataDelegate" Collapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveGenresDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveMostPopularGenresDataDelegate" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveMostPopularGenresDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrievePlaylistsDataDelegate" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrievePlaylistsDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveSharedUserPlaylistsDataDelegate" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveSharedUserPlaylistsDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveSongPlaylistLinksDataDelegate" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveSongPlaylistLinksDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveSongsDataDelegate" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveSongsDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveTop10SongsDataDelegate" Collapsed="true">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveTop10SongsDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.RetrieveUsersDataDelegate" Collapsed="true">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DataDelegates\RetrieveUsersDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.SavePlaylistDataDelegate" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAACAAAAAAAEAAAAAAAAAAAAAAQABAAQAAAAAAAA=</HashCode>
+      <FileName>DataDelegates\SavePlaylistDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.DataDelegates.SaveUserDataDelegate" Collapsed="true">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAgCAAAAAAAAAAEAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>DataDelegates\SaveUserDataDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.Album" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Album.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.Artist" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAgAAAAAAQAAAAAAACAAAAAABAAAAA=</HashCode>
+      <FileName>Models\Artist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.ArtistsAlbum" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgACAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Models\ArtistsAlbum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.Collaboration" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAACAAAAAABAAAAA=</HashCode>
+      <FileName>Models\Collaboration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.Genre" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Genre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.GenreWithSongs" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GenreWithSongs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.Playlist" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAEAAAAAAAAAAAAABAAAAAEAAQAAAAA=</HashCode>
+      <FileName>Models\Playlist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.PlaylistWithPlaytime" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAABAAAAAAAJAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PlaylistWithPlaytime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.SharedUserPlaylist" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\SharedUserPlaylist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.Song" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAACBAAAEAACAAAAAAgAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\Song.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.SongInfoWrapper" Collapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAEAAAAAAgAAAAAAACAAAAAABAAAAI=</HashCode>
+      <FileName>Models\SongInfoWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.SongPlaylistLink" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAEAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SongPlaylistLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.TopSong" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAA=</HashCode>
+      <FileName>Models\TopSong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.Models.User" Collapsed="true">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAwAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicData.SqlAggregateQueryRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAEAAAAAAAIAAIAAAAAAAAAAQA=</HashCode>
+      <FileName>SqlAggregateQueryRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MusicData.SqlPlaylistRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACRAgAEAAAAAAAAAAAEAAAAAABEAAEACAAAAAAAAAA=</HashCode>
+      <FileName>SqlPlaylistRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MusicData.SqlSongRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>SqlSongRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MusicData.SqlUserRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAQAEAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>SqlUserRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="MusicData.DataDelegates.IAggregateQueryRepository" Collapsed="true">
+    <Position X="3" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAAAQA=</HashCode>
+      <FileName>IAggregateQueryRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicData.Models.IPlaylistRepository" Collapsed="true">
+    <Position X="4.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPlaylistRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicData.ISongRepository" Collapsed="true">
+    <Position X="6.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>ISongRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicData.IUserRepository" Collapsed="true">
+    <Position X="8.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAQAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>IUserRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

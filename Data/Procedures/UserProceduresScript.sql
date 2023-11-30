@@ -1,6 +1,5 @@
 --Procedure for the User
 
---Takes an email and a password, then returns the corresponding user if found
 DROP PROCEDURE IF EXISTS LoginFetch
 GO
 CREATE PROCEDURE LoginFetch @Email NVARCHAR(100), @Password NVARCHAR(100)
@@ -15,7 +14,7 @@ GO
 -- EXEC LoginFecth @UserEmail = 'dang@dang.com', @UserPassword = 'passwordD560';
 
 
---Takes a name, an email and a password, then creates an user base on those attributs
+
 DROP PROCEDURE IF EXISTS UserSignIn
 GO
 CREATE PROCEDURE UserSignIn @Name NVARCHAR(100), @Email NVARCHAR(100), @Password NVARCHAR(100), @UserID INT OUTPUT

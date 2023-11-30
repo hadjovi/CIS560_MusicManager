@@ -7,6 +7,8 @@ FROM MusicManager.Song AS S
 GO
 -- EXEC RetrieveAllSongs 
 
+
+
 DROP PROCEDURE IF EXISTS RetrieveSongsFromPlaylist
 GO
 CREATE PROCEDURE RetrieveSongsFromPlaylist @PlaylistId INT
@@ -37,6 +39,7 @@ ORDER BY G.GenreID ASC
 GO
 -- EXEC RetrieveAllGenre
 
+
 DROP PROCEDURE IF EXISTS RetrieveAllArtistAlbum
 GO
 CREATE PROCEDURE RetrieveAllArtistAlbum 
@@ -57,6 +60,7 @@ SELECT AA.ArtistsAlbumID,
 FROM MusicManager.ArtistsAlbum AS AA;
 GO
 -- EXEC RetrieveAllArtistAlbum 
+
 
 
 DROP PROCEDURE IF EXISTS RetrieveAllSongsWithArtistAlbum
@@ -81,6 +85,8 @@ FROM MusicManager.Song AS S
 	INNER JOIN MusicManager.ArtistsAlbum AS AA ON S.AlbumID = AA.AlbumID
 GO
 -- EXEC RetrieveAllSongsWithArtistAlbum
+
+
 
 DROP PROCEDURE IF EXISTS FilterSongByPlaylist
 GO
@@ -110,6 +116,7 @@ GO
 -- EXEC FilterSongByAlbum @AlbumId = 10;
 
 
+
 DROP PROCEDURE IF EXISTS FilterSongByGenre
 GO
 CREATE PROCEDURE FilterSongByGenre @GenreId INT 
@@ -119,6 +126,8 @@ FROM MusicManager.Song AS S
 WHERE S.GenreID = @GenreId
 GO
 -- EXEC FilterSongByGenre @GenreId = 4;
+
+
 
 
 DROP PROCEDURE IF EXISTS FilterSongByArtist
@@ -135,6 +144,24 @@ WHERE S.AlbumID =
 )
 GO
 -- EXEC FilterSongByArtist @ArtistId = 2;
+
+
+
+DROP PROCEDURE IF EXISTS FilterSongByPlaylist
+GO
+CREATE PROCEDURE FilterSongByPlaylist @PlaylistId INT 
+AS
+SELECT S.SongID, S.SongName, S.Playtime, S.TrackNumber, S.GenreID, S.AlbumID
+FROM MusicManager.Song AS S
+WHERE S.SongID IN
+(
+	SELECT SPL.SongID
+	FROM MusicManager.SongPlaylistLink AS SPL
+	WHERE SPL.PlaylistID = @PlaylistId
+)
+GO
+-- EXEC FilterSongByPlaylist @PlaylistId = 9;
+
 
 
 DROP PROCEDURE IF EXISTS GetTop10Songs
@@ -232,3 +259,35 @@ FROM MusicManager.ArtistsAlbum AS AA
 WHERE AA.ArtistID <> @ArtistID
 GO
 -- EXEC ShowArtistGenre @ArtistID = 6;
+
+
+DROP PROCEDURE IF EXISTS RetrieveAllSongsWithEverything
+GO
+CREATE PROCEDURE RetrieveAllSongsWithEverything 
+AS
+SELECT S.SongID, 
+	S.SongName,
+	S.TrackNumber,
+	S.AlbumID,
+	(
+		SELECT AB.AlbumName
+		FROM MusicManager.Album AS AB
+		WHERE AB.AlbumID = S.AlbumID
+	) AS AlbumName,
+	AA.ArtistID,
+	(
+		SELECT A.ArtistName
+		FROM MusicManager.Artist AS A
+		WHERE A.ArtistID = AA.ArtistID
+	) AS ArtistName,
+	S.GenreID,
+	(
+		SELECT G.GenreName
+		FROM MusicManager.Genre AS G
+		WHERE G.GenreID = S.GenreID
+	) AS GenreName,
+	S.Playtime
+FROM MusicManager.Song AS S
+	INNER JOIN MusicManager.ArtistsAlbum AS AA ON S.AlbumID = AA.AlbumID
+GO
+-- EXEC RetrieveAllSongsWithEverything 
