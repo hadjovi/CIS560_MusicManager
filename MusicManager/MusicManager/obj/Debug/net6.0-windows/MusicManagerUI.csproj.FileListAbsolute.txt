@@ -4,7 +4,6 @@ C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CI
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.dll
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.pdb
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.AssemblyReference.cache
-C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManager.uxMainWindow.resources
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.LoginDialog.resources
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.SongAdd.resources
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.UserSearchDialog.resources
@@ -53,3 +52,19 @@ C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.pdb
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.genruntimeconfig.cache
 C:\Users\benke\Documents\CIS 560\Final Project\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\ref\MusicManagerUI.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\DataAccess.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.dll
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\DataAccess.pdb
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.pdb
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.dll.config
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.CreatePlaylistDialog.resources
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManager.Form1.resources
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.PlaylistSettingsDialog.resources
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.StatsDisplayDialog.resources
+C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.CopyComplete
