@@ -17,12 +17,16 @@ namespace MusicManager
 
         SqlUserRepository uRepo = new SqlUserRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
         SqlPlaylistRepository pRepo = new SqlPlaylistRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+        SqlSongRepository sRepo = new SqlSongRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
 
         public Form1()
         {
             InitializeComponent();
             getUsers();
 
+
+            IReadOnlyList<Song> readSong = sRepo.RetrieveSongs();
+            foreach (Song s in readSong) { allSongList.Add(new Song(s.SongID, s.SongName, s.Playtime, s.TrackNumber, s.GenreID, s.AlbumID)); }
 
             loginDialog();
             setLibrary(SignedIn);
@@ -119,14 +123,14 @@ namespace MusicManager
             IReadOnlyList<Playlist> readPlaylist= pRepo.RetrievePlaylists(u.UserID);
             foreach(Playlist p in readPlaylist)
             {
-                if (u.UserID == SignedIn.UserID)
+                if (u.UserID == SignedIn.UserID && !(p.IsDeleted))
                 {
                     currentLibrary.Add(new Playlist(p.PlaylistID, p.PlaylistName, p.PlaylistOwnerID, p.IsPrivate, p.IsDeleted));
                 }
             }
             foreach (Playlist p in readPlaylist)
             {
-                if (!p.IsPrivate && u.UserID != SignedIn.UserID)
+                if (!p.IsPrivate && (u.UserID != SignedIn.UserID) && !(p.IsDeleted))
                 {
                     currentLibrary.Add(new Playlist(p.PlaylistID, p.PlaylistName, p.PlaylistOwnerID, p.IsPrivate, p.IsDeleted));
                 }
@@ -169,6 +173,20 @@ namespace MusicManager
 
             uxSongslist.DataSource = currentPlaylistSongs;
 
+            uxSongslist.Columns["SongID"].Visible = false;
+            uxSongslist.Columns["TrackNumber"].Visible = false;
+
+            if (SignedIn.UserID == currentPlaylist.PlaylistOwnerID)
+            {
+                uxAddSong.Enabled = true;
+                uxDeleteSong.Enabled = true;
+            }
+            else
+            {
+                uxAddSong.Enabled = false;
+                uxDeleteSong.Enabled = false;
+            }
+
             setPlaylistViewVisible();
         }
 
@@ -178,7 +196,21 @@ namespace MusicManager
             SAD.ShowDialog();
             if (SAD.DialogResult == DialogResult.OK)
             {
-                //Whaddya do???
+                uxSongslist.DataSource = null;
+                currentPlaylistSongs = new();
+
+                IReadOnlyList<Song> readSong = pRepo.RetrieveSongsFromPlaylist(currentPlaylist.PlaylistID);
+
+                foreach (Song s in readSong)
+                {
+                    currentPlaylistSongs.Add(new Song(s.SongID, s.SongName, s.Playtime, s.TrackNumber, s.GenreID, s.AlbumID));
+                }
+
+
+                uxPlaylistName.Text = "Playlist Name: " + currentPlaylist.PlaylistName;
+                uxPlaylistOwnerName.Text = "Is owned by: " + currentPlaylist.PlaylistOwnerID.ToString();// Convert to PLAYLIST OWNER NAME!!!!!!!!
+
+                uxSongslist.DataSource = currentPlaylistSongs;
             }
         }
 
@@ -197,5 +229,14 @@ namespace MusicManager
             return UI;
         }
 
+        private void uxDeleteSong_Click(object sender, EventArgs e)
+        {
+            Song delSong;
+            foreach (DataGridViewRow row in uxSongslist.SelectedRows)
+            {
+                delSong = row.DataBoundItem as Song;
+            }
+            
+        }
     }
 }

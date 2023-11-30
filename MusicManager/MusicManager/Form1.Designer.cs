@@ -47,6 +47,7 @@
             this.uxLibraryOwnerName = new System.Windows.Forms.Label();
             this.uxPlaylistSettings = new System.Windows.Forms.Button();
             this.uxStats = new System.Windows.Forms.Button();
+            this.uxDeleteSong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxSongslist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxPlaylists)).BeginInit();
             this.SuspendLayout();
@@ -191,7 +192,7 @@
             // 
             // uxAddSong
             // 
-            this.uxAddSong.Location = new System.Drawing.Point(173, 375);
+            this.uxAddSong.Location = new System.Drawing.Point(107, 375);
             this.uxAddSong.Name = "uxAddSong";
             this.uxAddSong.Size = new System.Drawing.Size(75, 23);
             this.uxAddSong.TabIndex = 16;
@@ -236,11 +237,22 @@
             this.uxStats.UseVisualStyleBackColor = true;
             this.uxStats.Click += new System.EventHandler(this.uxStats_Click);
             // 
+            // uxDeleteSong
+            // 
+            this.uxDeleteSong.Location = new System.Drawing.Point(228, 375);
+            this.uxDeleteSong.Name = "uxDeleteSong";
+            this.uxDeleteSong.Size = new System.Drawing.Size(83, 23);
+            this.uxDeleteSong.TabIndex = 21;
+            this.uxDeleteSong.Text = "Delete Song";
+            this.uxDeleteSong.UseVisualStyleBackColor = true;
+            this.uxDeleteSong.Click += new System.EventHandler(this.uxDeleteSong_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.uxDeleteSong);
             this.Controls.Add(this.uxStats);
             this.Controls.Add(this.uxPlaylistSettings);
             this.Controls.Add(this.uxLibraryOwnerName);
@@ -288,5 +300,6 @@
         private Label uxLibraryOwnerName;
         private Button uxPlaylistSettings;
         private Button uxStats;
+        private Button uxDeleteSong;
     }
 }
