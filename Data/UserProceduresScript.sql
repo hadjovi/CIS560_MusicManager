@@ -118,20 +118,3 @@ GO
 -- EXEC RetrieveAllUsers 
 
 
-
-DROP PROCEDURE IF EXISTS GetUserOriginalPercntage
-GO
-CREATE PROCEDURE GetUserOriginalPercntage @UserId INT 
-AS
-CREATE TABLE #OwnedList(PlaylistID INT, PlaylistName NVARCHAR(100), IsPrivate BIT);
-CREATE TABLE #SharedList(PlaylistID INT, PlaylistName NVARCHAR(100), IsPrivate BIT);
-INSERT INTO #OwnedList
-EXEC UserOwnedPlaylistFecth @UserId = @UserId;
-INSERT INTO #SharedList
-EXEC UserOwnedPlaylistFecth @UserId = @UserId;
-Select *
-FROM #OwnedList
-GO
--- EXEC GetUserOriginalPercntage @UserId = 1;
-
-
