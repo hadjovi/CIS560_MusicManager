@@ -13,7 +13,7 @@ namespace MusicManager
         List<Playlist> currentLibrary = new();
         Playlist currentPlaylist;//check
         List<Song> currentPlaylistSongs = new();
-        //List<UiSong> allSongList = new();//check
+        List<Song> allSongList = new();//check
 
         SqlUserRepository uRepo = new SqlUserRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
         SqlPlaylistRepository pRepo = new SqlPlaylistRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
@@ -21,7 +21,6 @@ namespace MusicManager
         public Form1()
         {
             InitializeComponent();
-            setPlaylistViewInvisible();
             getUsers();
 
 
@@ -31,7 +30,7 @@ namespace MusicManager
             uxPlaylists.Columns["PlaylistOwnerID"].Visible = false;
             uxPlaylists.Columns["IsPrivate"].Visible = false;
             uxPlaylists.Columns["isDeleted"].Visible = false;
-            uxPlaylists.ClearSelection();
+            //uxPlaylists.ClearSelection();
             //uxSongslist.Columns["SongID"].Visible=false;
             //uxSongslist.Columns["TrackNumber"].Visible = false;
     }
@@ -116,6 +115,7 @@ namespace MusicManager
         {
             LibOwner = u;
             currentLibrary = new();//reset source
+
             IReadOnlyList<Playlist> readPlaylist= pRepo.RetrievePlaylists(u.UserID);
             foreach(Playlist p in readPlaylist)
             {
@@ -131,10 +131,11 @@ namespace MusicManager
                     currentLibrary.Add(new Playlist(p.PlaylistID, p.PlaylistName, p.PlaylistOwnerID, p.IsPrivate, p.IsDeleted));
                 }
             }
+
             uxPlaylists.DataSource = currentLibrary;
+            setPlaylistViewInvisible();
 
             uxLibraryOwnerName.Text = u + "'s Library";
-            setPlaylistViewInvisible();
         }
         private void uxMyPlaylists_Click(object sender, EventArgs e)
         {
@@ -173,17 +174,28 @@ namespace MusicManager
 
         private void uxAddSong_Click(object sender, EventArgs e)
         {
-            /*SongAdd SAD = new SongAdd(allSongList);
+            SongAdd SAD = new SongAdd(allSongList,currentPlaylist);
             SAD.ShowDialog();
             if (SAD.DialogResult == DialogResult.OK)
             {
                 //Whaddya do???
-            }*/
+            }
         }
 
         private void uxStats_Click(object sender, EventArgs e)
         {
 
         }
+
+        private List<UiSong> ConvertSongList(List<Song> s)
+        {
+            List<UiSong> UI = new();
+
+
+
+
+            return UI;
+        }
+
     }
 }
