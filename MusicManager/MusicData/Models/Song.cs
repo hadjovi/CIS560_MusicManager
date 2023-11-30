@@ -21,5 +21,9 @@ namespace MusicData.Models
             AlbumID = albumId;
             TrackNumber = trackNumber;
         }
+        public override string ToString()
+        {
+            return SongName;
+        }
     }
 }

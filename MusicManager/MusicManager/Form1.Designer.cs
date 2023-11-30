@@ -34,10 +34,6 @@
             this.uxSignOut = new System.Windows.Forms.Button();
             this.uxSongslist = new System.Windows.Forms.DataGridView();
             this.uxPlaylists = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.uxPlaylistName = new System.Windows.Forms.Label();
             this.uxNoPlaylistWarning = new System.Windows.Forms.Label();
             this.uxSearchUsers = new System.Windows.Forms.Button();
@@ -90,13 +86,13 @@
             this.uxSongslist.AllowUserToResizeRows = false;
             this.uxSongslist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.uxSongslist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.uxSongslist.Location = new System.Drawing.Point(14, 93);
+            this.uxSongslist.Location = new System.Drawing.Point(14, 75);
             this.uxSongslist.Name = "uxSongslist";
             this.uxSongslist.RowHeadersVisible = false;
             this.uxSongslist.RowTemplate.Height = 25;
             this.uxSongslist.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.uxSongslist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.uxSongslist.Size = new System.Drawing.Size(466, 263);
+            this.uxSongslist.Size = new System.Drawing.Size(466, 281);
             this.uxSongslist.TabIndex = 6;
             // 
             // uxPlaylists
@@ -117,42 +113,6 @@
             this.uxPlaylists.Size = new System.Drawing.Size(240, 263);
             this.uxPlaylists.TabIndex = 7;
             this.uxPlaylists.SelectionChanged += new System.EventHandler(this.uxPlaylists_SelectionChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Song Name";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(134, 51);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 15);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Artist";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(206, 51);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 15);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Album";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(326, 46);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 15);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Runtime";
             // 
             // uxPlaylistName
             // 
@@ -298,10 +258,6 @@
             this.Controls.Add(this.uxMyPlaylists);
             this.Controls.Add(this.uxSearchUsers);
             this.Controls.Add(this.uxPlaylistName);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.uxPlaylists);
             this.Controls.Add(this.uxSongslist);
             this.Controls.Add(this.uxSignOut);

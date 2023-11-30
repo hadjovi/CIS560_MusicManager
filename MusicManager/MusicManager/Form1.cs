@@ -11,13 +11,19 @@ namespace MusicManager
         User LibOwner;
         List<User> userList = new();
         List<Playlist> currentLibrary = new();
-        Playlist currentPlaylist;//check
+        Playlist currentPlaylist;
         List<Song> currentPlaylistSongs = new();
-        List<Song> allSongList = new();//check
+        List<Song> allSongList = new();
+        List<SongInfoWrapper> SuperSongList = new();
+        List<SongInfoWrapper> SuperCurrentPlaylistSongs = new();
+
+
 
         SqlUserRepository uRepo = new SqlUserRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
         SqlPlaylistRepository pRepo = new SqlPlaylistRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
         SqlSongRepository sRepo = new SqlSongRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+
+
 
         public Form1()
         {
@@ -37,6 +43,13 @@ namespace MusicManager
             //uxPlaylists.ClearSelection();
             //uxSongslist.Columns["SongID"].Visible=false;
             //uxSongslist.Columns["TrackNumber"].Visible = false;
+            
+            IReadOnlyList<SongInfoWrapper> readExtras = sRepo.RetrieveSongExtras(); //------------------------------
+            foreach(SongInfoWrapper s in readExtras)
+            {
+                SuperSongList.Add(new SongInfoWrapper(s.Song.SongID, s.Song.SongName, s.Song.TrackNumber, s.Song.AlbumID, s.AlbumName, s.ArtistID, s.ArtistName, s.Song.GenreID, s.GenreName, s.Song.Playtime));
+            }
+
     }
 
 
@@ -65,10 +78,10 @@ namespace MusicManager
         /// </summary>
         public void setPlaylistViewInvisible()
         {
-            label5.Visible = false;
-            label6.Visible = false;
-            label7.Visible = false;
-            label8.Visible = false;
+            //label5.Visible = false;
+            //label6.Visible = false;
+            //label7.Visible = false;
+            //label8.Visible = false;
             uxPlaylistName.Visible = false;
             uxSongslist.Visible = false;
             uxAddSong.Visible = false;
@@ -81,10 +94,10 @@ namespace MusicManager
         /// </summary>
         public void setPlaylistViewVisible()
         {
-            label5.Visible = true;
-            label6.Visible = true;
-            label7.Visible = true;
-            label8.Visible = true;
+            //label5.Visible = true;
+            //label6.Visible = true;
+            //label7.Visible = true;
+            //label8.Visible = true;
             uxPlaylistName.Visible = true;
             uxSongslist.Visible = true;
             uxAddSong.Visible = true;
@@ -167,6 +180,8 @@ namespace MusicManager
             foreach(Song s in readSong)
             {
                 currentPlaylistSongs.Add(new Song(s.SongID, s.SongName, s.Playtime, s.TrackNumber, s.GenreID, s.AlbumID));
+                SongInfoWrapper temp = SuperSongList.Find(x => x.Song.SongID == s.SongID);
+                SuperCurrentPlaylistSongs.Add(temp);//-------------------------------------------------------------------
             }
 
 
@@ -174,9 +189,17 @@ namespace MusicManager
             uxPlaylistOwnerName.Text = "Is owned by: "+currentPlaylist.PlaylistOwnerID.ToString();// Convert to PLAYLIST OWNER NAME!!!!!!!!
 
             uxSongslist.DataSource = currentPlaylistSongs;
+            uxSongslist.DataSource = SuperCurrentPlaylistSongs; //-----------------------------------------------------
 
-            uxSongslist.Columns["SongID"].Visible = false;
-            uxSongslist.Columns["TrackNumber"].Visible = false;
+            //uxSongslist.Columns["SongID"].Visible = false;
+            //uxSongslist.Columns["TrackNumber"].Visible = false;
+
+            uxSongslist.Columns["ArtistID"].Visible = false;
+            uxSongslist.Columns["AlbumName"].HeaderText = "Album";
+            uxSongslist.Columns["ArtistName"].HeaderText = "Artist";
+            uxSongslist.Columns["GenreName"].HeaderText = "Genre";
+
+
 
             if (SignedIn.UserID == currentPlaylist.PlaylistOwnerID)
             {

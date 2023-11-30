@@ -18,5 +18,9 @@ namespace MusicData.Models
             this.ArtistName = artistName;
             this.GenreName = genreName;
         }
+        public override string ToString()
+        {
+            return Song.SongName;
+        }
     }
 }

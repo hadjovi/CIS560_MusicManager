@@ -35,6 +35,7 @@
             this.uxEmailBox = new System.Windows.Forms.TextBox();
             this.uxLoginButton = new System.Windows.Forms.Button();
             this.uxLoginBad = new System.Windows.Forms.Label();
+            this.uxCreate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -89,12 +90,23 @@
             this.uxLoginBad.Text = "Error: Login does not exist";
             this.uxLoginBad.Visible = false;
             // 
+            // uxCreate
+            // 
+            this.uxCreate.Location = new System.Drawing.Point(179, 93);
+            this.uxCreate.Name = "uxCreate";
+            this.uxCreate.Size = new System.Drawing.Size(75, 23);
+            this.uxCreate.TabIndex = 6;
+            this.uxCreate.Text = "Create User";
+            this.uxCreate.UseVisualStyleBackColor = true;
+            this.uxCreate.Click += new System.EventHandler(this.uxCreate_Click);
+            // 
             // LoginDialog
             // 
             this.AcceptButton = this.uxLoginButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(266, 126);
+            this.Controls.Add(this.uxCreate);
             this.Controls.Add(this.uxPasswordBox);
             this.Controls.Add(this.uxEmailBox);
             this.Controls.Add(this.uxLoginBad);
@@ -117,5 +129,6 @@
         private TextBox uxEmailBox;
         private Button uxLoginButton;
         private Label uxLoginBad;
+        private Button uxCreate;
     }
 }
