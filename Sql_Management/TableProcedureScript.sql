@@ -490,4 +490,36 @@ FROM MusicManager.Genre AS G
  INNER JOIN MusicManager.Song AS S ON S.GenreID = G.GenreID
 GROUP BY G.GenreID, G.GenreName
 ORDER BY NumberOfSongs DESC;
+GO
 -- EXEC GetMostPopularGenres;
+
+	
+DROP PROCEDURE IF EXISTS RetrieveAllSongsWithEverything
+GO
+CREATE PROCEDURE RetrieveAllSongsWithEverything 
+AS
+SELECT S.SongID, 
+	S.SongName, 
+	S.AlbumID,
+	(
+		SELECT AB.AlbumName
+		FROM MusicManager.Album AS AB
+		WHERE AB.AlbumID = S.AlbumID
+	) AS AlbumName,
+	AA.ArtistID,
+	(
+		SELECT A.ArtistName
+		FROM MusicManager.Artist AS A
+		WHERE A.ArtistID = AA.ArtistID
+	) AS ArtistName,
+	S.GenreID,
+	(
+		SELECT G.GenreName
+		FROM MusicManager.Genre AS G
+		WHERE G.GenreID = S.GenreID
+	) AS GenreName,
+	S.Playtime
+FROM MusicManager.Song AS S
+	INNER JOIN MusicManager.ArtistsAlbum AS AA ON S.AlbumID = AA.AlbumID
+GO
+-- EXEC RetrieveAllSongsWithEverything 
