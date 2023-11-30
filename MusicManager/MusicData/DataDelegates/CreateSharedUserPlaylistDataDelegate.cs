@@ -21,7 +21,7 @@ namespace MusicData.DataDelegates
             base.PrepareCommand(command);
 
             command.Parameters.AddWithValue("PlaylistID", playlistId);
-            command.Parameters.AddWithValue("UserID", userId);
+            command.Parameters.AddWithValue("NewUserID", userId);
 
             var p = command.Parameters.Add("SharedUserPlaylistID", SqlDbType.Int);
             p.Direction = ParameterDirection.Output;
