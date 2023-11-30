@@ -51,5 +51,11 @@ namespace MusicData
             var d = new DeleteSongFromPlaylistDataDelegate(songId, playlistId);
             executor.ExecuteNonQuery(d);
         }
+
+        public void DeletePlaylist(int userId, int playlistId)
+        {
+            var d = new DeletePlaylistDataDelegate(userId, playlistId);
+            executor.ExecuteNonQuery(d);
+        }
     }
 }
