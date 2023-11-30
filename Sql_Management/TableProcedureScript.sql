@@ -499,7 +499,8 @@ GO
 CREATE PROCEDURE RetrieveAllSongsWithEverything 
 AS
 SELECT S.SongID, 
-	S.SongName, 
+	S.SongName,
+	S.TrackNumber,
 	S.AlbumID,
 	(
 		SELECT AB.AlbumName

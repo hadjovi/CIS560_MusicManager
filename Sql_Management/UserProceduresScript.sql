@@ -90,7 +90,7 @@ FROM MusicManager.Playlist AS P
 WHERE P.PlaylistOwnerID = @UserId
 AND P.IsDeleted = 0
 UNION
-SELECT P.PlaylistID,
+SELECT DISTINCT P.PlaylistID,
 		P.PlaylistName,
 		P.PlaylistOwnerID,
 		P.IsPrivate,

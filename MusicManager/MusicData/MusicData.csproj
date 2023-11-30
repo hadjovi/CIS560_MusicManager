@@ -208,6 +208,7 @@
     <Compile Include="DataDelegates\GetUserDataDelegate.cs" />
     <Compile Include="DataDelegates\PlaylistUpdateIsPrivateDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveAllSongsFromPlaylistDataDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveAllSongWrappersDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveArtistsAlbumDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveArtistsDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGenresDataDelegate.cs" />
@@ -229,6 +230,7 @@
     <Compile Include="Models\Playlist.cs" />
     <Compile Include="Models\SharedUserPlaylist.cs" />
     <Compile Include="Models\Song.cs" />
+    <Compile Include="Models\SongInfoWrapper.cs" />
     <Compile Include="Models\SongPlaylistLink.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

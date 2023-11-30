@@ -18,5 +18,10 @@ namespace MusicData
         {
             return executor.ExecuteReader(new RetrieveSongsDataDelegate());
         }
+
+        public IReadOnlyList<SongInfoWrapper> RetrieveSongExtras()
+        {
+            return executor.ExecuteReader(new RetrieveAllSongWrappersDataDelegate());
+        }
     }
 }
