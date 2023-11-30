@@ -48,6 +48,8 @@
             this.uxPlaylistSettings = new System.Windows.Forms.Button();
             this.uxStats = new System.Windows.Forms.Button();
             this.uxDeleteSong = new System.Windows.Forms.Button();
+            this.uxCreatePlaylist = new System.Windows.Forms.Button();
+            this.uxAddToLib = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxSongslist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxPlaylists)).BeginInit();
             this.SuspendLayout();
@@ -220,12 +222,13 @@
             // 
             // uxPlaylistSettings
             // 
-            this.uxPlaylistSettings.Location = new System.Drawing.Point(550, 395);
+            this.uxPlaylistSettings.Location = new System.Drawing.Point(550, 391);
             this.uxPlaylistSettings.Name = "uxPlaylistSettings";
             this.uxPlaylistSettings.Size = new System.Drawing.Size(110, 23);
             this.uxPlaylistSettings.TabIndex = 19;
             this.uxPlaylistSettings.Text = "Playlist Settings";
             this.uxPlaylistSettings.UseVisualStyleBackColor = true;
+            this.uxPlaylistSettings.Click += new System.EventHandler(this.uxPlaylistSettings_Click);
             // 
             // uxStats
             // 
@@ -247,11 +250,32 @@
             this.uxDeleteSong.UseVisualStyleBackColor = true;
             this.uxDeleteSong.Click += new System.EventHandler(this.uxDeleteSong_Click);
             // 
+            // uxCreatePlaylist
+            // 
+            this.uxCreatePlaylist.Location = new System.Drawing.Point(550, 424);
+            this.uxCreatePlaylist.Name = "uxCreatePlaylist";
+            this.uxCreatePlaylist.Size = new System.Drawing.Size(110, 23);
+            this.uxCreatePlaylist.TabIndex = 23;
+            this.uxCreatePlaylist.Text = "Create Playlist";
+            this.uxCreatePlaylist.UseVisualStyleBackColor = true;
+            this.uxCreatePlaylist.Click += new System.EventHandler(this.uxCreatePlaylist_Click);
+            // 
+            // uxAddToLib
+            // 
+            this.uxAddToLib.Location = new System.Drawing.Point(339, 404);
+            this.uxAddToLib.Name = "uxAddToLib";
+            this.uxAddToLib.Size = new System.Drawing.Size(119, 43);
+            this.uxAddToLib.TabIndex = 24;
+            this.uxAddToLib.Text = "Add Playlist to Library";
+            this.uxAddToLib.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.uxAddToLib);
+            this.Controls.Add(this.uxCreatePlaylist);
             this.Controls.Add(this.uxDeleteSong);
             this.Controls.Add(this.uxStats);
             this.Controls.Add(this.uxPlaylistSettings);
@@ -301,5 +325,7 @@
         private Button uxPlaylistSettings;
         private Button uxStats;
         private Button uxDeleteSong;
+        private Button uxCreatePlaylist;
+        private Button uxAddToLib;
     }
 }
