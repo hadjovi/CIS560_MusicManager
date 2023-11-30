@@ -10,9 +10,10 @@ namespace MusicManager
         User SignedIn;
         User LibOwner;
         List<User> userList = new();
-        List<Playlist> currentLibrary = new();//check
+        List<Playlist> currentLibrary = new();
         Playlist currentPlaylist;//check
-        List<UiSong> allSongList = new();//check
+        List<Song> currentPlaylistSongs = new();
+        //List<UiSong> allSongList = new();//check
 
         SqlUserRepository uRepo = new SqlUserRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
         SqlPlaylistRepository pRepo = new SqlPlaylistRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
@@ -31,6 +32,8 @@ namespace MusicManager
             uxPlaylists.Columns["IsPrivate"].Visible = false;
             uxPlaylists.Columns["isDeleted"].Visible = false;
             uxPlaylists.ClearSelection();
+            //uxSongslist.Columns["SongID"].Visible=false;
+            //uxSongslist.Columns["TrackNumber"].Visible = false;
     }
 
 
@@ -150,23 +153,32 @@ namespace MusicManager
             {
                 currentPlaylist = row.DataBoundItem as Playlist;
             }
+            currentPlaylistSongs = new();
 
+            IReadOnlyList<Song> readSong = pRepo.RetrieveSongsFromPlaylist(currentPlaylist.PlaylistID);
 
+            foreach(Song s in readSong)
+            {
+                currentPlaylistSongs.Add(new Song(s.SongID, s.SongName, s.Playtime, s.TrackNumber, s.GenreID, s.AlbumID));
+            }
 
 
             uxPlaylistName.Text = "Playlist Name: "+currentPlaylist.PlaylistName;
             uxPlaylistOwnerName.Text = "Is owned by: "+currentPlaylist.PlaylistOwnerID.ToString();// Convert to PLAYLIST OWNER NAME!!!!!!!!
+
+            uxSongslist.DataSource = currentPlaylistSongs;
+
             setPlaylistViewVisible();
         }
 
         private void uxAddSong_Click(object sender, EventArgs e)
         {
-            SongAdd SAD = new SongAdd(allSongList);
+            /*SongAdd SAD = new SongAdd(allSongList);
             SAD.ShowDialog();
             if (SAD.DialogResult == DialogResult.OK)
             {
                 //Whaddya do???
-            }
+            }*/
         }
 
         private void uxStats_Click(object sender, EventArgs e)

@@ -81,10 +81,17 @@
             // 
             // uxSongslist
             // 
+            this.uxSongslist.AllowUserToAddRows = false;
+            this.uxSongslist.AllowUserToDeleteRows = false;
+            this.uxSongslist.AllowUserToResizeRows = false;
+            this.uxSongslist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.uxSongslist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.uxSongslist.Location = new System.Drawing.Point(14, 93);
             this.uxSongslist.Name = "uxSongslist";
+            this.uxSongslist.RowHeadersVisible = false;
             this.uxSongslist.RowTemplate.Height = 25;
+            this.uxSongslist.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.uxSongslist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.uxSongslist.Size = new System.Drawing.Size(466, 263);
             this.uxSongslist.TabIndex = 6;
             // 
@@ -146,7 +153,7 @@
             // uxPlaylistName
             // 
             this.uxPlaylistName.AutoSize = true;
-            this.uxPlaylistName.Location = new System.Drawing.Point(93, 18);
+            this.uxPlaylistName.Location = new System.Drawing.Point(43, 18);
             this.uxPlaylistName.Name = "uxPlaylistName";
             this.uxPlaylistName.Size = new System.Drawing.Size(96, 15);
             this.uxPlaylistName.TabIndex = 12;

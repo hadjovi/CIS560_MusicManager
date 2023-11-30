@@ -18,3 +18,37 @@ C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CI
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.pdb
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.genruntimeconfig.cache
 C:\Users\rayan\OneDrive\Bureau\K-State\Fall 2023\CIS 560\Project_MusicManager\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\ref\MusicManagerUI.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.exe
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.deps.json
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.runtimeconfig.json
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicManagerUI.pdb
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\DataAccess.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\DataAccess.pdb
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.pdb
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\bin\Debug\net6.0-windows\MusicData.dll.config
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.AssemblyReference.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManager.Form1.resources
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.LoginDialog.resources
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.PlaylistSettingsDialog.resources
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.SongAdd.resources
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.StatsDisplayDialog.resources
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.UserSearchDialog.resources
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.GenerateResource.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.AssemblyInfoInputs.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.AssemblyInfo.cs
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.CoreCompileInputs.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.csproj.CopyComplete
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\refint\MusicManagerUI.dll
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.pdb
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\MusicManagerUI.genruntimeconfig.cache
+C:\Users\waysi\OneDrive\Documents\GitHub\CIS560_MusicManager\MusicManager\MusicManager\obj\Debug\net6.0-windows\ref\MusicManagerUI.dll
