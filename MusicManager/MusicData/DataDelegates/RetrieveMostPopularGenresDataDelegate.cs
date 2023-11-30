@@ -20,7 +20,7 @@ namespace MusicData.DataDelegates
                 genres.Add(new GenreWithSongs(
                     reader.GetInt32("GenreID"),
                     reader.GetString("GenreName"),
-                    reader.GetInt32("NumberOfSongs"));
+                    reader.GetInt32("NumberOfSongs")));
             }
 
             return genres;
