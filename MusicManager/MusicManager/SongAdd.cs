@@ -1,4 +1,5 @@
-﻿using MusicData.Models;
+﻿using MusicData;
+using MusicData.Models;
 using MusicManagerUI.Models;
 using System;
 using System.Collections.Generic;
@@ -18,11 +19,15 @@ namespace MusicManagerUI
         List<Song> trueSongs = new();
         Song selectedSong;
         Playlist currPlaylist;
+        SqlPlaylistRepository pRepo = new SqlPlaylistRepository(@"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;");
+
+
         public SongAdd(List<Song> S, Playlist p)
         {
             InitializeComponent();
             allSongs = S;
             currPlaylist = p;
+            uxAddButton.Enabled = false;
         }
 
         private void uxTrySearch_Click(object sender, EventArgs e)
@@ -31,11 +36,10 @@ namespace MusicManagerUI
             string trackName = uxSongNameBox.Text;
             string trackAlbumName = uxAlbumTitleBox.Text;
             string trackArtistName = uxArtistNameBox.Text;
-            //Call search function here!!! have it return a list of songs?
             trueSongs = new();
-            foreach (Song s in trueSongs)
+            foreach (Song s in allSongs)
             {
-                if (s.SongName.ToLower().Contains(uxSongNameBox.Text.ToLower())){//add other parameters
+                if (s.SongName.ToLower().Contains(trackName.ToLower())){//add other parameters
                     trueSongs.Add(s);
                 }
             }
@@ -47,6 +51,11 @@ namespace MusicManagerUI
             else
             {
                 uxAddButton.Enabled = true;
+                uxResultBox.Columns["SongID"].Visible = false;
+                //uxResultBox.Columns["TrackNumber"].Visible = false;
+                //uxResultBox.Columns["GenreID"].Visible = false;
+                //uxResultBox.Columns["AlbumID"].Visible = false;
+
             }
 
 
@@ -56,20 +65,22 @@ namespace MusicManagerUI
         {
             foreach (DataGridViewRow row in uxResultBox.SelectedRows)
             {
-                selectedSong = row.DataBoundItem as UiSong;
+                selectedSong = row.DataBoundItem as Song;
             }
-            //WHAT TO ACTUALLY DO WITH THE SONG
-
-
-
-
-
+            try
+            {
+                pRepo.AddSongToPlaylist(selectedSong.SongID, currPlaylist.PlaylistID);
+            }
+            catch
+            {
+                MessageBox.Show("Cannot add duplicate songs");
+            }
             DialogResult = DialogResult.OK;
         }
 
         private void uxCancel_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
+            DialogResult = DialogResult.Cancel;
         }
     }
 }

@@ -101,10 +101,15 @@
             // 
             // uxResultBox
             // 
+            this.uxResultBox.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.uxResultBox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.uxResultBox.Location = new System.Drawing.Point(39, 105);
+            this.uxResultBox.MultiSelect = false;
             this.uxResultBox.Name = "uxResultBox";
+            this.uxResultBox.RowHeadersVisible = false;
             this.uxResultBox.RowTemplate.Height = 25;
+            this.uxResultBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.uxResultBox.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.uxResultBox.Size = new System.Drawing.Size(693, 265);
             this.uxResultBox.TabIndex = 6;
             // 
